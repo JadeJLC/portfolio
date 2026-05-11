@@ -113,6 +113,8 @@ const translations = {
     // Dev
     project_inda_description:
       "Role-Playing forum designed on the <em>Forumactif</em> platform, with an <b>Invision</b> framework. <br> The main forum structure is part of the platform, I personalized it with HTML, CSS and a few scripts to give it a more personal and lively feel for my players.",
+    project_inda_exams_description:
+      'Related to my role-playing forum Indarë, a puzzle-game for "Exams" so that the player characters can finish their studies in a fun, engaging way. Include puzzles and small story-driven adventures. Only available in French, but most puzzle are self explanatory. Start the game, chose a character, get dressed, leave the room and try some exams. Suggested for easy understanding : physics, chemistry, maths.',
     project_dea_description:
       "Role-Playing forum designed on the <em>Forumactif</em> platform, with a <b>phpBB3</b> framework. <br> The main forum structure is part of the platform, I personalized it with HTML, CSS and a few scripts based on my graphisc designer's spring-themed design.",
     project_wam_description:
@@ -231,6 +233,8 @@ const translations = {
     //  Dev
     project_inda_description:
       "Forum de jeu de rôle conçu sur la plateforme <em>Forumactif</em>, version <b>Invision</b>. <br> La structure principale du forum est fournie par la plateforme, je l'ai personnalisée avec du HTML, du CSS et quelques scripts afin de lui donner une ambiance personnalisée et plus vivante pour mes joueurs.",
+    project_inda_exams_description:
+      'Lié à mon forum de jeu de rôle Indarë, un jeu de puzzle pour les "Examens" des personnages, pour qu\'ils terminent leur année de façon ludique et intéressante. Inclus des puzzles et des mini-aventures interactives. Uniquement en français. Choisissez un personnage, un uniforme, quittez votre chambre et commencez une épreuve.',
     project_dea_description:
       "Forum de jeu de rôle conçu sur la plateforme <em>Forumactif</em>, version <b>phpBB3</b>. <br> La structure principale du forum est fournie par la plateforme, je l'ai personnalisée avec du HTML, du CSS et quelques scripts selon les maquettes de mon graphiste pour un thème printanier.",
     project_wam_description:

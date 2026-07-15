@@ -1,0 +1,213 @@
+/* #region ***** Variables */
+@import url("https://fonts.googleapis.com/css2?family=New+Rocker&family=Shojumaru&family=Skranji:wght@400;700&display=swap");
+
+:root {
+  --grad-background: linear-gradient(
+    163deg,
+    rgba(186, 76, 162, 1) 0%,
+    rgba(105, 16, 65, 1) 43%,
+    rgba(69, 6, 41, 1) 100%
+  );
+  --grad-header: radial-gradient(
+    circle,
+    rgba(69, 6, 41, 1) 0%,
+    rgba(105, 16, 65, 1) 57%,
+    rgba(69, 6, 41, 1) 100%
+  );
+
+  --color-write: #ba4ca2;
+  --color-dark: #450629;
+  --color-accent: #691041;
+  --color-shine: #ffbaf0;
+
+  --color-golden: #ebc677;
+  --color-faded-gold: #eed5a088;
+
+  --font-soft: "Skranji", system-ui;
+  --font-caps: "Shojumaru", system-ui;
+  --font-stylish: "New Rocker", system-ui;
+}
+/* #endregion */
+
+/* #region ***** Animations */
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes reverse-rotating {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.rotating-normal {
+  animation: rotating 60s linear infinite;
+}
+
+.rotating-reverse {
+  animation: reverse-rotating 60s linear infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* #endregion */
+
+/* #region ***** Bases de la page */
+body {
+  background: var(--grad-background);
+  background-size: cover;
+  height: calc(100vh - 80px);
+  padding-top: 80px;
+}
+/* #endregion */
+
+/* #region ***** header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  padding: 5px;
+  background: var(--grad-header);
+  width: calc(100vw - 10px);
+}
+
+header svg {
+  position: absolute;
+  bottom: -25px;
+  width: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header::before,
+header::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 40%;
+  bottom: 0px;
+}
+
+header::before {
+  background: linear-gradient(
+    to right,
+    var(--color-faded-gold),
+    var(--color-golden)
+  );
+  left: 0px;
+}
+
+header::after {
+  background: linear-gradient(
+    to left,
+    var(--color-faded-gold),
+    var(--color-golden)
+  );
+  right: 0px;
+}
+
+header aside {
+  height: 100%;
+}
+
+header aside img,
+header aside span {
+  position: absolute;
+}
+
+header aside .internal-circle {
+  width: 70px;
+  left: 30px;
+  top: 5px;
+  animation: reverse-rotating 30s linear infinite;
+}
+
+header aside .external-circle {
+  width: 120px;
+  left: 5px;
+  top: -8px;
+  animation: rotating 80s linear infinite;
+}
+
+header aside span {
+  color: var(--color-golden);
+  font-family: var(--font-stylish);
+  font-weight: 500;
+  top: 25px;
+  left: 55px;
+  text-shadow: 0px 0px 5px var(--color-faded-gold);
+}
+/* #endregion */
+
+/* #region **** Sous-header */
+.top-zone aside {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  /* background-color: black; */
+}
+
+.top-zone .internal-circle {
+  width: 240px;
+  left: 80px;
+  top: 40px;
+  z-index: 2;
+}
+
+.top-zone .external-circle {
+  width: 400px;
+}
+
+.top-zone aside img {
+  position: absolute;
+}
+
+.top-zone .photo {
+  top: 90px;
+  left: 130px;
+  width: 140px;
+  border-radius: 50%;
+  z-index: 1;
+  filter: brightness(1.1) hue-rotate(-30deg);
+  opacity: 0.8;
+}
+
+.top-zone aside div span {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  font-size: 0.9em;
+  z-index: 3;
+  color: var(--color-shine);
+  text-shadow: 5px 5px 5px var(--color-accent);
+  animation: pulse 4s linear infinite;
+  position: relative;
+  top: 210px;
+  backdrop-filter: blur(3px);
+  padding: 5px;
+  border-radius: 5px;
+  font-family: var(--font-soft);
+}
+
+/* #endregion */

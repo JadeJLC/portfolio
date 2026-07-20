@@ -19,6 +19,7 @@ function init() {
     getUrlParameter("domain") || sessionStorage.getItem("domain") || "dev";
 
   switchLanguage(language);
+  switchDomain(domain);
 
   rotateText();
   setInterval(rotateText, 3000);
@@ -56,7 +57,51 @@ document.addEventListener("click", (event) => {
   if (frenchSwitchBtn) {
     switchLanguage("fr");
   }
+
+  const devSwitchBtn = event.target.closest("#dev");
+  if (devSwitchBtn) {
+    switchDomain("dev");
+  }
+
+  const tradSwitchBtn = event.target.closest("#trad");
+  if (tradSwitchBtn) {
+    switchDomain("trad");
+  }
+
+  const writeSwitchBtn = event.target.closest("#write");
+  if (writeSwitchBtn) {
+    switchDomain("write");
+  }
 });
+
+async function switchDomain(domain) {
+  const tabs = document.querySelectorAll(".tabs button");
+
+  tabs.forEach((tab) => {
+    tab.classList.remove("active");
+  });
+
+  document.getElementById(domain).classList.add("active");
+  sessionStorage.setItem("domain", domain);
+
+  document.body.classList.add("faded");
+
+  try {
+    if (!domainCache[domain]) {
+      const response = await fetch(`locales/${domain}.json`);
+      domainCache[domain] = await response.json;
+    }
+
+    const data = translationCache[language];
+    setTimeout(() => {
+      lucide.createIcons();
+      document.body.classList.remove("faded");
+    }, 200);
+  } catch (error) {
+    console.error("Failed to load domain data:", error);
+    document.body.classList.remove("faded");
+  }
+}
 
 /**
  * Gère le changement de langue de la page en récupérant les données nécessaires

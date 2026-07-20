@@ -487,6 +487,7 @@ span {
   border: 1px solid var(--zone-color);
   background: var(--zone-grad);
   min-width: 230px;
+  cursor: pointer;
 }
 
 #dev {
@@ -553,6 +554,10 @@ span {
   content: "—";
   font-size: 2em;
   margin-right: 5px;
+}
+
+.tabs button.active {
+  box-shadow: 1px 1px 15px var(--zone-color);
 }
 
 .tabs button.active .tab-title::after {

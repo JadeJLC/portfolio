@@ -1,0 +1,52 @@
+{
+  "header": {
+    "intro": "Développeuse, autrice, traductrice",
+    "email": "<i data-lucide=\"mail\"></i> Contactez-moi !",
+    "github": "Voir mes projets sur Github",
+    "linkedin": "Voir mon profil LinkedIn",
+    "menu_bio": "À propos",
+    "menu_skills": "Compétences",
+    "menu_projects": "Projets",
+    "menu_contact": "Contact"
+  },
+  "sheet": {
+    "title": "Fiche de personnage",
+    "level": "Nv.",
+    "spec": "Multiclasse",
+    "three": "Trois façons ",
+    "quote": "L’art seul peut s’accorder le privilège d’affirmer les tourments et les joies du cœur. Par nature implicite, il est la plus discrète et la plus belle des manières de faire virevolter les sentiments."
+  },
+  "rotations": {
+    "life": "donner vie à des idées",
+    "exp": "créer des expérience",
+    "world": "forger des univers",
+    "solve": "résoudre des problèmes",
+    "understand": "comprendre le monde",
+    "creatif": "faire briller la créativité",
+    "details": "souligner les détails",
+    "quality": "créer de la qualité",
+    "complex": "décrypter la complexité",
+    "story": "raconter une histoire"
+  },
+  "tab_dev": {
+    "title": "Classe • 01",
+    "name": "Développeuse",
+    "subtitle": "Code & Systèmes",
+    "footer": "Dev FullStack"
+  },
+  "tab_trad": {
+    "title": "Classe • 02",
+    "name": "Traductrice",
+    "subtitle": "D'une lange à l'autre",
+    "footer": "EN → FR"
+  },
+  "tab_writer": {
+    "title": "Classe • 03",
+    "name": "Autrice",
+    "subtitle": "Au fil de la plume",
+    "footer": "Fantasy"
+  },
+  "dev_projects": [],
+  "trad_projects": [],
+  "writing_projects": []
+}

@@ -1,0 +1,52 @@
+{
+  "header": {
+    "intro": "Developer, writer, translator",
+    "email": "<i data-lucide=\"mail\"></i> Send me an email!",
+    "github": "View my projects on Github",
+    "linkedin": "Check my LinkedIn profile",
+    "menu_bio": "About me",
+    "menu_skills": "Skills",
+    "menu_projects": "Projects",
+    "menu_contact": "Contact"
+  },
+  "sheet": {
+    "title": "Character sheet",
+    "level": "Lv.",
+    "spec": "Multiclass",
+    "three": "Three ways to",
+    "quote": "Only art has the privilege to display the torments and joys of the heart. Implicit by nature, it's the most discreet yet beautiful way to show the flight of feelings."
+  },
+  "rotations": {
+    "life": "bring ideas to life",
+    "exp": "create experiences",
+    "world": "forge universes",
+    "solve": "solve problems",
+    "understand": "understand the world",
+    "creatif": "express creativity",
+    "details": "master the details",
+    "quality": "ensure quality",
+    "complex": "execute complex ideas",
+    "story": "tell stories"
+  },
+  "tab_dev": {
+    "title": "Class • 01",
+    "name": "Developper",
+    "subtitle": "Code & Systems",
+    "footer": "Dev FullStack"
+  },
+  "tab_trad": {
+    "title": "Class • 02",
+    "name": "Translator",
+    "subtitle": "Float between languages",
+    "footer": "EN → FR"
+  },
+  "tab_writer": {
+    "title": "Class • 03",
+    "name": "Author",
+    "subtitle": "Ink on the page",
+    "footer": "Fantasy"
+  },
+  "dev_projects": [],
+  "trad_projects": [],
+  "writing_projects": []
+}

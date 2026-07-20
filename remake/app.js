@@ -1,0 +1,168 @@
+import {
+  rotateText,
+  calculateLevel,
+  pageStatus,
+  translationCache,
+} from "./helpers.js";
+
+document.addEventListener("DOMContentLoaded", () => {
+  init();
+});
+
+/**
+ * Lancement de la page et des fonctions d'affichage (langue, domaine, etc)
+ */
+function init() {
+  const language =
+    getUrlParameter("lang") || sessionStorage.getItem("lang") || "fr";
+  const domain =
+    getUrlParameter("domain") || sessionStorage.getItem("domain") || "dev";
+
+  switchLanguage(language);
+
+  rotateText();
+  setInterval(rotateText, 3000);
+}
+
+/**
+ * Récupère les informations de la page dans l'url (langue et domaine)
+ * @param {String} name Nom du paramètre à récupérer dans l'url
+ * @returns
+ */
+function getUrlParameter(name) {
+  name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+  const regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+  const results = regex.exec(location.search);
+  return results === null
+    ? null
+    : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+/**
+ * Création des events listeners pour tous les boutons
+ */
+document.addEventListener("click", (event) => {
+  const menuOpenBtn = event.target.closest(".main-menu");
+  if (menuOpenBtn) {
+    menuOpenBtn.classList.toggle("open");
+  }
+
+  const englishSwitchBtn = event.target.closest("#english");
+  if (englishSwitchBtn) {
+    switchLanguage("en");
+  }
+
+  const frenchSwitchBtn = event.target.closest("#french");
+  if (frenchSwitchBtn) {
+    switchLanguage("fr");
+  }
+});
+
+/**
+ * Gère le changement de langue de la page en récupérant les données nécessaires
+ * Dans les fichiers json associés
+ * @param {String} language "fr" ou "en" en fonction du bouton
+ */
+async function switchLanguage(language) {
+  sessionStorage.setItem("lang", language);
+  if (language == "fr") {
+    document.getElementById("french")?.classList.add("active");
+    document.getElementById("english")?.classList.remove("active");
+  } else {
+    document.getElementById("french")?.classList.remove("active");
+    document.getElementById("english")?.classList.add("active");
+  }
+
+  document.body.classList.add("faded");
+
+  try {
+    if (!translationCache[language]) {
+      const response = await fetch(`locales/${language}.json`);
+      translationCache[language] = await response.json();
+    }
+
+    const data = translationCache[language];
+    setTimeout(() => {
+      fillHeaderData(data.header);
+      fillSheetData(data, language);
+      createTabs(data);
+
+      lucide.createIcons();
+      document.body.classList.remove("faded");
+    }, 200);
+  } catch (error) {
+    console.error("Failed to load translation data:", error);
+    document.body.classList.remove("faded");
+  }
+}
+
+/**
+ * Remplissage des données du header en fonction de la langue choisie dans l'url, le sessionStorage ou l'appel de switchLanguage
+ * @param {string} language
+ */
+function fillHeaderData(headerData) {
+  document.querySelector("header h1 span").textContent = headerData.intro;
+  document.querySelector(".contact-info button").innerHTML = headerData.email;
+
+  ["#github", "#linkedin"].forEach((id) => {
+    const el = document.querySelector(id);
+    if (el) el.alt = el.title = headerData[id.replace("#", "")];
+  });
+
+  ["skills", "bio", "contact", "projects"].forEach((key) => {
+    const el = document.querySelector(`.main-menu #menu_${key}`);
+    if (el) el.textContent = headerData[`menu_${key}`];
+  });
+}
+
+function fillSheetData(data, language) {
+  const sheetBloc = document.querySelector(".top-zone");
+
+  if (!sheetBloc) {
+    console.error("Failed to load sheet data:", error);
+    return;
+  }
+
+  sheetBloc.querySelector(".title").textContent = data.sheet.title;
+
+  // Age & spec
+  const age = calculateLevel(new Date(1994, 7, 16));
+  sheetBloc.querySelector(".level").textContent = `${data.sheet.level} ${age}`;
+  sheetBloc.querySelector(".spec").textContent = data.sheet.spec;
+
+  // Carrousel
+  sheetBloc.querySelector(".ways").textContent =
+    data.sheet.three + `${language == "fr" ? " de" : ""}`;
+
+  const wrap = sheetBloc.querySelector(".rotation");
+  wrap.innerHTML = "";
+
+  const phrases = Object.values(data.rotations);
+  if (phrases.length > 0) {
+    const firstSpan = document.createElement("span");
+    firstSpan.className = "rotator-word";
+    firstSpan.textContent = phrases[0];
+    wrap.appendChild(firstSpan);
+  }
+
+  pageStatus.currentIndex = 0;
+
+  document.querySelector(".main-quote p").textContent = data.sheet.quote;
+}
+
+function createTabs(data) {
+  const devTab = document.querySelector("#dev");
+  const tradTab = document.querySelector("#trad");
+  const writeTab = document.querySelector("#write");
+
+  fillTabData(devTab, data.tab_dev);
+  fillTabData(tradTab, data.tab_trad);
+  fillTabData(writeTab, data.tab_writer);
+}
+
+function fillTabData(tab, data) {
+  tab.querySelector(".tab-title").textContent = data.title;
+  tab.querySelector(".name").textContent = data.name;
+  tab.querySelector(".subtitle").textContent = data.subtitle;
+  tab.querySelector("footer").textContent = data.footer;
+}

@@ -392,6 +392,7 @@ span {
   margin: auto;
   margin-top: 50px;
   position: relative;
+  overflow: hidden;
 }
 
 .top-zone::before,

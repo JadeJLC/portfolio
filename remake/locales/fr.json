@@ -48,7 +48,7 @@
   },
   "dev_projects": [
     {
-      "id": "project_01",
+      "id": "dev_01",
       "name": "Forums de rp / jdr",
       "description": "Forums de jeu de rôle conçus sur la plateforme Forumactif, version Invision. <br/> La structure principale de chaque forum est fournie par la plateforme. Je l'ai personnalisée avec du HTML, du CSS et quelques scripts à partir de maquettes de design.",
       "tags": ["front-end", "web", "communauté"],
@@ -67,7 +67,7 @@
       ]
     },
     {
-      "id": "project_02",
+      "id": "dev_02",
       "name": "Timetable",
       "description": "Petite appli Go pour générer un emploi du temps. Entrez vos horaires de disponibilité, le nombre total d'heures à effectuer dans la semaine, et le programme les placera équitablement entre vos jours de travail. Existe aussi en version serveur web.",
       "tags": ["back-end", "small-scale", "organisation"],
@@ -85,7 +85,7 @@
       ]
     },
     {
-      "id": "project_03",
+      "id": "dev_03",
       "name": "HamsterCare",
       "description": "Appli web en javascript inspirée des Tamagotchis et des jeux de soin d'animaux. Occupez-vous d'un hamster en pixel art et gardez-le en vie aussi longtemps que possible. <br/> Ses besoins comprennent la nourriture, l'eau, le sommeil, l'activité physique, la propreté et l'amusement, et s'impactent les uns les autres.",
       "tags": ["front-end", "algorithmique", "jeu vidéo"],
@@ -95,11 +95,12 @@
         {
           "title": "Github public",
           "href": "https://github.com/JadeJLC/HamsterCare"
-        }
+        },
+        { "title": "Projet en cours" }
       ]
     },
     {
-      "id": "project_04",
+      "id": "dev_04",
       "name": "Project Nightmare : Deadline Invaders",
       "description": "Jeu web inspiré par Space Invaders. Un nouveau collègue désagréable rejoint votre équipe. Il s'attribue le mérite de vos succès et vous tient responsable des échecs. Achevez vos projets professionnels sans le laisser gâcher vos efforts, et faites en sorte que vous et vos autres collègues obteniez la reconnaissance que mérite votre travail.",
       "tags": ["front-end", "back-end", "jeu vidéo"],
@@ -121,7 +122,7 @@
       ]
     },
     {
-      "id": "project_05",
+      "id": "dev_05",
       "name": "Project Nightmare : Discord in the Office",
       "description": "Application de forum programmée en Go et JavaScript. L'application combine des fonctionnalités de forum classique avec un système de messagerie privée en temps réel, le tout dans l'univers humoristique de Project Nightmare.",
       "tags": ["front-end", "back-end", "communauté"],
@@ -135,7 +136,7 @@
       ]
     },
     {
-      "id": "project_06",
+      "id": "dev_06",
       "name": "Crossword",
       "description": "Programme qui résout automatiquement des grilles de mots croisés vides à partir d'une liste de mots fournie. L'algorithme utilise le backtracking pour explorer toutes les combinaisons possibles et garantir une solution unique.",
       "tags": ["back-end", "algorithmique"],
@@ -149,7 +150,7 @@
       ]
     },
     {
-      "id": "project_07",
+      "id": "dev_07",
       "name": "Puppet",
       "description": "Puppet est un mini-framework conçu pour manipuler facilement le DOM et réduire le codage manuel du HTML. Il gère :<br/>- La création et la mise à jour d'élément du DOM <br/>- La réactivité en temps réel de l'affichage <br/>- L'utilisation de plusieurs routes en /#/ pour les SPA<br/>- Les événements",
       "tags": ["back-end", "framework", "puppet"],
@@ -167,6 +168,140 @@
       ]
     }
   ],
-  "trad_projects": [],
+  "trad_projects": [
+    {
+      "id": "trad_01",
+      "name": "Bamblup: Motion To Win",
+      "description": "Lors d'un stage en Suède, j'ai travaillé chez FirstAndTen sur leur jeu Bamblup: Motion To Win. Mon rôle consistait à écrire le lore, les dialogues et les texte de l'interface en anglais avant des les traduire. Je participais aussi aux sessions brainstorming pour trouver de nouvelles idées de gameplay.",
+      "tags": ["FirstAndTen", "creativité"],
+      "tech_skills": ["Anglais → Français", "Travail d'équipe"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Cheffe de projet : Leslie Alfredson",
+          "href": "https://www.linkedin.com/in/leslie-alfredsson/"
+        }
+      ]
+    },
+    {
+      "id": "trad_02",
+      "name": "J-RPG",
+      "description": "Traduction et localisation complète d'un J-RPG : environ 300k mots de dialogues, descriptions de quêtes, noms inventés (compétences, créatures, lieux) et interfaces. Le jeu étant la suite de plusieurs autres, le maintien de la cohérence était une partie importante de mon travail sur ce projet.",
+      "tags": ["Keywords Studios", "creativité", "recherche"],
+      "tech_skills": ["Anglais → Français", "MemoQ"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Cheffe de projet : Florie Abélard",
+          "href": "https://www.linkedin.com/in/florie-ab%C3%A9lard-9147b6b4/"
+        },
+        { "title": "Nom du jeu et client sous accord de confidentialité" }
+      ]
+    },
+    {
+      "id": "trad_03",
+      "name": "Blizzard Out Of Game",
+      "description": "Sous-titrage d'une interview vidéo promotionnelle pour une extension de HearthStone. Pour le même client et avec le même chef de projet, j'ai également travaillé sur d'autres projets \"Out of Game\", comme des notes de mise à jour et des annonces.",
+      "tags": ["Keywords Studios", "sous-titrage"],
+      "tech_skills": ["SubtitleEdit", "Anglais → Français"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Chef de projet : Sylvain Lamole",
+          "href": "https://www.linkedin.com/in/sylvain-lamole-0579293/"
+        },
+        {
+          "title": "Client : Blizzard",
+          "href": "https://www.blizzard.com/fr-fr/"
+        }
+      ]
+    },
+    {
+      "id": "trad_04",
+      "name": "Avatar: Frontiers of Pandora",
+      "description": "Traduction et localisation de 60k mots de doublages, dialogues et menus du RPG en monde ouvert Avatar : Frontiers of Pandora (Ubisoft). Je faisais partie d'une équipe de six traducteurs et relecteurs.<br/>Nous avons également traduit le lore du jeu et les noms des plantes et créatures inventés.",
+      "tags": ["Keywords Studios", "creativité"],
+      "tech_skills": ["MemoQ", "Anglais → Français", "Travail d'équipe"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Client : Ubisoft",
+          "href": "https://www.ubisoft.com/fr-fr/game/avatar/frontiers-of-pandora"
+        }
+      ]
+    },
+    {
+      "id": "trad_05",
+      "name": "MasterChef",
+      "description": "Sous-titrage en MTPE de 4 épisodes de MasterChef pour Amazon Prime (161 minutes). Le travail consistait majoritairement à corriger des erreurs de traduction et de contextualisation, ainsi qu'à rendre la version française plus idiomatique.",
+      "tags": ["WordMinds", "sous-titrage"],
+      "tech_skills": ["SubtitleEdit", "Anglais → Français", "MTPE"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Chef de projet : Victor Bîbîlici",
+          "href": "https://www.linkedin.com/in/victor-b%C3%AEb%C3%AElici-9375b5245/"
+        },
+        {
+          "title": "Client : Amazon Prime",
+          "href": "https://www.primevideo.com/-/fr/detail/MasterChef/0IMN0DJFLDIS6JLW6GAPBIS8IS"
+        }
+      ]
+    },
+    {
+      "id": "trad_06",
+      "name": "Lovenest",
+      "description": "Sous-titrage en MTPE du film LoveNest pour Disney+ (85 minutes). La correction en MTPE impliquait de corriger des noms de personnages, de traduire correctement des paroles de chanson et d'éviter les répétitions multiples sur certains termes, en plus de rendre le français plus naturel.",
+      "tags": ["WordMinds", "sous-titrage"],
+      "tech_skills": ["SubtitleEdit", "Anglais → Français", "MTPE"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Cheffe de projet : Alina Castraşan",
+          "href": "https://www.linkedin.com/in/alina-castra%C5%9Fan-50ab644b/"
+        },
+        {
+          "title": "Client : Disney+",
+          "href": "https://www.disneyplus.com/home"
+        }
+      ]
+    },
+    {
+      "id": "trad_07",
+      "name": "Don't bother to knock",
+      "description": "Sous-titrage en MTPE du film Don't bother to Knock pour Disney+ (72 minutes). Le travail consistait majoritairement à corriger des erreurs dans des noms de lieux et de personnages, d'assurer une version française cohérente et fluide et d'éviter des tournures de phrases étranges.",
+      "tags": ["WordMinds", "sous-titrage"],
+      "tech_skills": ["SubtitleEdit", "Anglais → Français", "MTPE"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Cheffe de projet : Lilia Cusnir",
+          "href": "https://www.linkedin.com/in/lilia-cusnir-243908316/"
+        },
+        {
+          "title": "Client : Disney+",
+          "href": "https://www.disneyplus.com/home"
+        }
+      ]
+    },
+    {
+      "id": "trad_08",
+      "name": "Sword Art Online: Echoes of Aincrad",
+      "description": "J-RPG sorti le 10 juillet 2026. Connaissant bien la série du jeu, j'ai partagé la plupart de mes connaissances pour remplir le lexique et la mémoire de traduction et ainsi faciliter l'avancement du projet. L'équipe du projet a actuellement traduit et relu environ 200k mots.",
+      "tags": ["Keywords Studios", "expertise jeux"],
+      "tech_skills": ["Anglais → Français", "MemoQ", "Travail d'équipe"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Chef de projet : Nicolas Matthew",
+          "href": "https://www.linkedin.com/in/oresama-09a841a5/"
+        },
+        {
+          "title": "Client : Bandai Namco",
+          "href": "https://fr.bandainamcoent.eu/sword-art-online/echoes-of-aincrad"
+        }
+      ]
+    }
+  ],
   "writer_projects": []
 }

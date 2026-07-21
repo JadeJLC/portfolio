@@ -5,6 +5,7 @@ import {
   translationCache,
   domainCache,
   startImageRotation,
+  getIcon,
 } from "./helpers.js";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -269,20 +270,13 @@ function createProjectElement(project) {
   <h2>${project.name}</h2>
   
   <div class="project-link">
-  ${project.links
-    .map((link) => {
-      return `<a title="${link.title}" href="${link.href}">
-         ${
-           link.title.includes("Github")
-             ? `<svg width="24" height="24"><use href="sprite.svg#icon-github" /></svg>`
-             : link.title.includes("Bande annonce") ||
-                 link.title.includes("Trailer")
-               ? `<i data-lucide="play"></i>`
-               : `<i data-lucide="external-link"></i>`
-         }
-          </a>`;
-    })
-    .join("")}
+ ${project.links
+   .map((link) => {
+     return `<a title="${link.title}" ${link.href ? `href="${link.href}"` : ""}>
+      ${getIcon(link.title)}
+    </a>`;
+   })
+   .join("")}
   </div>
   <div class="project-skills">${project.tech_skills
     .map((skill) => {

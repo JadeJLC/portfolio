@@ -87,6 +87,37 @@ function startImageRotation(intervalSeconds = 3) {
   }, intervalSeconds * 1000);
 }
 
+function getIcon(title) {
+  const match = ICON_MAP.find((entry) =>
+    entry.keywords.some((kw) => title.includes(kw)),
+  );
+  return match ? match.icon : DEFAULT_ICON;
+}
+
+const DEFAULT_ICON = '<i data-lucide="external-link"></i>';
+
+const ICON_MAP = [
+  {
+    keywords: ["Github"],
+    icon: '<svg width="24" height="24"><use href="sprite.svg#icon-github" /></svg>',
+  },
+  {
+    keywords: ["Bande annonce", "Trailer"],
+    icon: '<i data-lucide="play"></i>',
+  },
+  { keywords: ["Jouer"], icon: '<i data-lucide="gamepad-2"></i>' },
+  {
+    keywords: ["NDA", "confidentialité"],
+    icon: '<i data-lucide="venetian-mask"></i>',
+  },
+  { keywords: ["Manager", "Chef"], icon: '<i data-lucide="user-star"></i>' },
+  { keywords: ["Client"], icon: '<i data-lucide="handshake"></i>' },
+  {
+    keywords: ["en cours", "in progress"],
+    icon: '<i data-lucide="loader-circle"></i>',
+  },
+];
+
 export {
   rotateText,
   calculateLevel,
@@ -94,4 +125,5 @@ export {
   translationCache,
   domainCache,
   startImageRotation,
+  getIcon,
 };

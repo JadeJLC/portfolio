@@ -30,7 +30,7 @@
   },
   "tab_dev": {
     "title": "Class • 01",
-    "name": "Developper",
+    "name": "Developer",
     "subtitle": "Code & Systems",
     "footer": "Dev FullStack"
   },
@@ -46,7 +46,127 @@
     "subtitle": "Ink on the page",
     "footer": "Fantasy"
   },
-  "dev_projects": [],
+  "dev_projects": [
+    {
+      "id": "project_01",
+      "name": "Role-Playing forums",
+      "description": "Role-Playing forums designed on the Forumactif platform, with an Invision framework.<br/>The main forum structure is part of the platform I personalized it with HTML, CSS and a JavaScript based on mock-ups.",
+      "tags": ["front-end", "web", "community"],
+      "tech_skills": ["HTML", "CSS", "JavaScript"],
+      "screenshots": [],
+      "links": [
+        { "title": "Indarë", "href": "https://indare.forumactif.com/" },
+        {
+          "title": "Dea Kademeia",
+          "href": "https://dea-kademeia.forumactif.com/"
+        },
+        {
+          "title": "We Are Miraculous",
+          "href": "https://we-are-miraculous.forumactif.com/"
+        }
+      ]
+    },
+    {
+      "id": "project_02",
+      "name": "Timetable",
+      "description": "Small Go app to generate a timetable. Enter your workable hours, the total number of hours you have to work this week, and the program will distribute them evenly between your work days. Also exists in a web-server version.",
+      "tags": ["back-end", "small-scale", "organisation"],
+      "tech_skills": ["Go"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Github - Terminal App",
+          "href": "https://github.com/JadeJLC/Timetable"
+        },
+        {
+          "title": "Github - Web version",
+          "href": "https://github.com/JadeJLC/Timetable-web"
+        }
+      ]
+    },
+    {
+      "id": "project_03",
+      "name": "HamsterCare",
+      "description": "A javascript web app inspired by Tamagotchis and pet care games. Take care of a pixel-art hamster and keep it alive as long as possible.<br/>Needs include food, water, sleep, physical activity, cleanliness and fun, and impact each other.",
+      "tags": ["front-end", "algorithm", "game"],
+      "tech_skills": ["JavaScript", "Pixel Art", "HTML", "CSS"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Public Github",
+          "href": "https://github.com/JadeJLC/HamsterCare"
+        }
+      ]
+    },
+    {
+      "id": "project_04",
+      "name": "Project Nightmare : Deadline Invaders",
+      "description": "A web game inspired by Space Invaders. An annoying coworker has joined your team. They claim every success on their work and every failure on you. Finish projects without letting him sabotage them and get the recognition you and your other coworkers deserve for your work.",
+      "tags": ["front-end", "back-end", "game"],
+      "tech_skills": ["JavaScript", "Pixel Art", "HTML"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Trailer",
+          "href": "https://www.youtube.com/watch?v=PKHEBm2XVwQ"
+        },
+        {
+          "title": "Public Github",
+          "href": "https://github.com/JadeJLC/Project-Nightmare---Deadline-Invaders"
+        },
+        {
+          "title": "Play the game",
+          "href": "https://jadejlc.itch.io/deadline-invaders"
+        }
+      ]
+    },
+    {
+      "id": "project_05",
+      "name": "Project Nightmare : Discord in the Office",
+      "description": "Forum app in Go and JavaScript. The app combines classic forum functionnalities and a real-time private message system, in the humoristic setting of Project Nightmare.",
+      "tags": ["front-end", "back-end", "communauté"],
+      "tech_skills": ["JavaScript", "HTML", "CSS", "Go"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Public Github",
+          "href": "https://github.com/JadeJLC/Project-Nightmare---Discord-in-the-office"
+        }
+      ]
+    },
+    {
+      "id": "project_06",
+      "name": "Crossword",
+      "description": "Program that automatically solves empty crossword grids from a list of words. The algorithm uses backtracking to explore all possible combinations and guarantee a unique solution.",
+      "tags": ["back-end", "algorithmique"],
+      "tech_skills": ["JavaScript"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Public Github",
+          "href": "https://github.com/JadeJLC/Crossword"
+        }
+      ]
+    },
+    {
+      "id": "project_07",
+      "name": "Puppet",
+      "description": "Puppet is a mini framework made to easily manupulate DOM and reduce manual HTML coding. It handles: <br/>- Creating and updating DOM elements <br/>- Real-time update of the display<br/>- Planning multiple routes in /#/ for SPAs <br/>- Events",
+      "tags": ["back-end", "framework", "puppet"],
+      "tech_skills": ["JavaScript", "HTML", "CSS"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Public Github",
+          "href": "https://github.com/JadeJLC/Puppet-framework"
+        },
+        {
+          "title": "Live demo: Cozy To-Do List",
+          "href": "https://puppet-todomvc.jadejlc.workers.dev/"
+        }
+      ]
+    }
+  ],
   "trad_projects": [],
-  "writing_projects": []
+  "writer_projects": []
 }

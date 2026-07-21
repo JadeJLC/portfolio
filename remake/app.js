@@ -3,19 +3,23 @@ import {
   calculateLevel,
   pageStatus,
   translationCache,
+  domainCache,
+  startImageRotation,
 } from "./helpers.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   init();
 });
 
+let language;
+let domain;
+
 /**
  * Lancement de la page et des fonctions d'affichage (langue, domaine, etc)
  */
 function init() {
-  const language =
-    getUrlParameter("lang") || sessionStorage.getItem("lang") || "fr";
-  const domain =
+  language = getUrlParameter("lang") || sessionStorage.getItem("lang") || "fr";
+  domain =
     getUrlParameter("domain") || sessionStorage.getItem("domain") || "dev";
 
   switchLanguage(language);
@@ -68,12 +72,17 @@ document.addEventListener("click", (event) => {
     switchDomain("trad");
   }
 
-  const writeSwitchBtn = event.target.closest("#write");
+  const writeSwitchBtn = event.target.closest("#writer");
   if (writeSwitchBtn) {
-    switchDomain("write");
+    switchDomain("writer");
   }
 });
 
+/**
+ * Gère le changement de domaine en récupérant les données nécessaires
+ * Dans les fichiers json associés
+ * @param {String} domain Le domaine sélectionné
+ */
 async function switchDomain(domain) {
   const tabs = document.querySelectorAll(".tabs button");
 
@@ -87,13 +96,15 @@ async function switchDomain(domain) {
   document.body.classList.add("faded");
 
   try {
-    if (!domainCache[domain]) {
-      const response = await fetch(`locales/${domain}.json`);
-      domainCache[domain] = await response.json;
+    if (!translationCache[language]) {
+      const response = await fetch(`locales/${language}.json`);
+      translationCache[language] = await response.json();
     }
 
-    const data = translationCache[language];
+    const key = `${domain}_projects`;
+    const data = translationCache[language][key];
     setTimeout(() => {
+      fillProjectsData(data, domain);
       lucide.createIcons();
       document.body.classList.remove("faded");
     }, 200);
@@ -108,7 +119,10 @@ async function switchDomain(domain) {
  * Dans les fichiers json associés
  * @param {String} language "fr" ou "en" en fonction du bouton
  */
-async function switchLanguage(language) {
+async function switchLanguage(lang) {
+  if (lang == "fr" || lang == "en") {
+    language = lang;
+  }
   sessionStorage.setItem("lang", language);
   if (language == "fr") {
     document.getElementById("french")?.classList.add("active");
@@ -119,6 +133,12 @@ async function switchLanguage(language) {
   }
 
   document.body.classList.add("faded");
+
+  const selectedText = language === "fr" ? "• Sélectionné" : "• Selected";
+  document.documentElement.style.setProperty(
+    "--tab-selected-text",
+    `"${selectedText}"`,
+  );
 
   try {
     if (!translationCache[language]) {
@@ -131,6 +151,7 @@ async function switchLanguage(language) {
       fillHeaderData(data.header);
       fillSheetData(data, language);
       createTabs(data);
+      switchDomain(domain);
 
       lucide.createIcons();
       document.body.classList.remove("faded");
@@ -198,7 +219,7 @@ function fillSheetData(data, language) {
 function createTabs(data) {
   const devTab = document.querySelector("#dev");
   const tradTab = document.querySelector("#trad");
-  const writeTab = document.querySelector("#write");
+  const writeTab = document.querySelector("#writer");
 
   fillTabData(devTab, data.tab_dev);
   fillTabData(tradTab, data.tab_trad);
@@ -210,4 +231,73 @@ function fillTabData(tab, data) {
   tab.querySelector(".name").textContent = data.name;
   tab.querySelector(".subtitle").textContent = data.subtitle;
   tab.querySelector("footer").textContent = data.footer;
+}
+
+function fillProjectsData(projectList, domain) {
+  const projectZone = document.querySelector(".project-zone");
+  projectZone.classList.remove("trad", "dev", "writer");
+  projectZone.classList.add(domain);
+
+  projectZone.innerHTML = "";
+  projectList = projectList.reverse();
+
+  projectList.forEach((project) => {
+    const htmlBloc = createProjectElement(project);
+    projectZone.appendChild(htmlBloc);
+  });
+
+  startImageRotation(3);
+}
+
+function createProjectElement(project) {
+  const container = document.createElement("article");
+  container.id = project.id;
+  container.classList.add("project-element");
+  container.innerHTML = `
+  ${
+    project.screenshots.length > 0
+      ? `<div class="rotating-images">
+          ${project.screenshots
+            .map((screenshot, index) => {
+              return `<img src="${screenshot}" class="slide-img" style="z-index: ${project.screenshots.length - index};" />`;
+            })
+            .join("")}
+        </div>`
+      : `<div class="empty-image"></div>`
+  }
+
+  <h2>${project.name}</h2>
+  
+  <div class="project-link">
+  ${project.links
+    .map((link) => {
+      return `<a title="${link.title}" href="${link.href}">
+         ${
+           link.title.includes("Github")
+             ? `<svg width="24" height="24"><use href="sprite.svg#icon-github" /></svg>`
+             : link.title.includes("Bande annonce") ||
+                 link.title.includes("Trailer")
+               ? `<i data-lucide="play"></i>`
+               : `<i data-lucide="external-link"></i>`
+         }
+          </a>`;
+    })
+    .join("")}
+  </div>
+  <div class="project-skills">${project.tech_skills
+    .map((skill) => {
+      return `<span>${skill}</span>`;
+    })
+    .join("")}
+  </div>
+  <main>${project.description}</main>
+  <div class="project-tags">${project.tags
+    .map((tag) => {
+      return `<span>${tag}</span>`;
+    })
+    .join("")}
+  </div>
+   `;
+
+  return container;
 }

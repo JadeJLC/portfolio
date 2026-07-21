@@ -3,6 +3,7 @@ const pageStatus = {
 };
 
 const translationCache = {};
+const domainCache = {};
 
 function rotateText() {
   const wrap = document.querySelector(".rotation");
@@ -66,4 +67,31 @@ function calculateLevel(startDate) {
   return level;
 }
 
-export { rotateText, calculateLevel, pageStatus, translationCache };
+function startImageRotation(intervalSeconds = 3) {
+  const container = document.querySelector(".rotating-images");
+  if (!container) return;
+
+  const images = container.querySelectorAll(".slide-img");
+  let currentIndex = 0;
+
+  setInterval(() => {
+    if (images.length <= 1) return;
+
+    if (currentIndex < images.length - 1) {
+      images[currentIndex].classList.add("slide-out");
+      currentIndex++;
+    } else {
+      images.forEach((img) => img.classList.remove("slide-out"));
+      currentIndex = 0;
+    }
+  }, intervalSeconds * 1000);
+}
+
+export {
+  rotateText,
+  calculateLevel,
+  pageStatus,
+  translationCache,
+  domainCache,
+  startImageRotation,
+};

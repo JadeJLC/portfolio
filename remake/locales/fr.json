@@ -18,7 +18,7 @@
   },
   "rotations": {
     "life": "donner vie à des idées",
-    "exp": "créer des expérience",
+    "exp": "créer des expériences",
     "world": "forger des univers",
     "solve": "résoudre des problèmes",
     "understand": "comprendre le monde",
@@ -37,7 +37,7 @@
   "tab_trad": {
     "title": "Classe • 02",
     "name": "Traductrice",
-    "subtitle": "D'une lange à l'autre",
+    "subtitle": "D'une langue à l'autre",
     "footer": "EN → FR"
   },
   "tab_writer": {
@@ -46,7 +46,127 @@
     "subtitle": "Au fil de la plume",
     "footer": "Fantasy"
   },
-  "dev_projects": [],
+  "dev_projects": [
+    {
+      "id": "project_01",
+      "name": "Forums de rp / jdr",
+      "description": "Forums de jeu de rôle conçus sur la plateforme Forumactif, version Invision. <br/> La structure principale de chaque forum est fournie par la plateforme. Je l'ai personnalisée avec du HTML, du CSS et quelques scripts à partir de maquettes de design.",
+      "tags": ["front-end", "web", "communauté"],
+      "tech_skills": ["HTML", "CSS", "JavaScript"],
+      "screenshots": ["./screenshots/dea-groups.png"],
+      "links": [
+        { "title": "Indarë", "href": "https://indare.forumactif.com/" },
+        {
+          "title": "Dea Kademeia",
+          "href": "https://dea-kademeia.forumactif.com/"
+        },
+        {
+          "title": "We Are Miraculous",
+          "href": "https://we-are-miraculous.forumactif.com/"
+        }
+      ]
+    },
+    {
+      "id": "project_02",
+      "name": "Timetable",
+      "description": "Petite appli Go pour générer un emploi du temps. Entrez vos horaires de disponibilité, le nombre total d'heures à effectuer dans la semaine, et le programme les placera équitablement entre vos jours de travail. Existe aussi en version serveur web.",
+      "tags": ["back-end", "small-scale", "organisation"],
+      "tech_skills": ["Go"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Github - Appli terminal",
+          "href": "https://github.com/JadeJLC/Timetable"
+        },
+        {
+          "title": "Github - Version web",
+          "href": "https://github.com/JadeJLC/Timetable-web"
+        }
+      ]
+    },
+    {
+      "id": "project_03",
+      "name": "HamsterCare",
+      "description": "Appli web en javascript inspirée des Tamagotchis et des jeux de soin d'animaux. Occupez-vous d'un hamster en pixel art et gardez-le en vie aussi longtemps que possible. <br/> Ses besoins comprennent la nourriture, l'eau, le sommeil, l'activité physique, la propreté et l'amusement, et s'impactent les uns les autres.",
+      "tags": ["front-end", "algorithmique", "jeu vidéo"],
+      "tech_skills": ["JavaScript", "Pixel Art", "HTML", "CSS"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Github public",
+          "href": "https://github.com/JadeJLC/HamsterCare"
+        }
+      ]
+    },
+    {
+      "id": "project_04",
+      "name": "Project Nightmare : Deadline Invaders",
+      "description": "Jeu web inspiré par Space Invaders. Un nouveau collègue désagréable rejoint votre équipe. Il s'attribue le mérite de vos succès et vous tient responsable des échecs. Achevez vos projets professionnels sans le laisser gâcher vos efforts, et faites en sorte que vous et vos autres collègues obteniez la reconnaissance que mérite votre travail.",
+      "tags": ["front-end", "back-end", "jeu vidéo"],
+      "tech_skills": ["JavaScript", "Pixel Art", "HTML"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Bande annonce",
+          "href": "https://www.youtube.com/watch?v=PKHEBm2XVwQ"
+        },
+        {
+          "title": "Github public",
+          "href": "https://github.com/JadeJLC/Project-Nightmare---Deadline-Invaders"
+        },
+        {
+          "title": "Jouer au jeu",
+          "href": "https://jadejlc.itch.io/deadline-invaders"
+        }
+      ]
+    },
+    {
+      "id": "project_05",
+      "name": "Project Nightmare : Discord in the Office",
+      "description": "Application de forum programmée en Go et JavaScript. L'application combine des fonctionnalités de forum classique avec un système de messagerie privée en temps réel, le tout dans l'univers humoristique de Project Nightmare.",
+      "tags": ["front-end", "back-end", "communauté"],
+      "tech_skills": ["JavaScript", "HTML", "CSS", "Go"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Github public",
+          "href": "https://github.com/JadeJLC/Project-Nightmare---Discord-in-the-office"
+        }
+      ]
+    },
+    {
+      "id": "project_06",
+      "name": "Crossword",
+      "description": "Programme qui résout automatiquement des grilles de mots croisés vides à partir d'une liste de mots fournie. L'algorithme utilise le backtracking pour explorer toutes les combinaisons possibles et garantir une solution unique.",
+      "tags": ["back-end", "algorithmique"],
+      "tech_skills": ["JavaScript"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Github public",
+          "href": "https://github.com/JadeJLC/Crossword"
+        }
+      ]
+    },
+    {
+      "id": "project_07",
+      "name": "Puppet",
+      "description": "Puppet est un mini-framework conçu pour manipuler facilement le DOM et réduire le codage manuel du HTML. Il gère :<br/>- La création et la mise à jour d'élément du DOM <br/>- La réactivité en temps réel de l'affichage <br/>- L'utilisation de plusieurs routes en /#/ pour les SPA<br/>- Les événements",
+      "tags": ["back-end", "framework", "puppet"],
+      "tech_skills": ["JavaScript", "HTML", "CSS"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Github public",
+          "href": "https://github.com/JadeJLC/Puppet-framework"
+        },
+        {
+          "title": "Démo live : Cozy To-Do List",
+          "href": "https://puppet-todomvc.jadejlc.workers.dev/"
+        }
+      ]
+    }
+  ],
   "trad_projects": [],
-  "writing_projects": []
+  "writer_projects": []
 }

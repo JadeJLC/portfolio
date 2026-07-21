@@ -76,7 +76,7 @@
       </svg>
     </header>
 
-    <section class="top-zone">
+    <section class="top-zone" id="bio">
       <aside>
         <img
           src="ressources/internal-circle.png"
@@ -94,6 +94,25 @@
       </aside>
       <h2>
         <span class="title"></span>
+        <div class="pro-links">
+          <!--Logo Github-->
+          <a href="https://github.com/JadeJLC" target="_blank" id="github">
+            <svg width="24" height="24">
+              <use href="sprite.svg#icon-github" />
+            </svg>
+          </a>
+
+          <!-- Logo linkedin-->
+          <a
+            href="https://www.linkedin.com/in/jadejlc/"
+            target="_blank"
+            id="linkedin"
+          >
+            <svg width="24" height="24">
+              <use href="sprite.svg#icon-linkedin" />
+            </svg>
+          </a>
+        </div>
         <div>
           <span class="level"></span> -
           <span class="spec"></span>
@@ -119,6 +138,13 @@
 
     <section class="tabs">
       <button type="button" id="dev">
+        <a
+          href="../Jade-Colanges-dev-2026.pdf"
+          target="_blank"
+          class="download-link"
+        >
+          <i data-lucide="file-user"></i>
+        </a>
         <span class="tab-title"></span>
         <div>
           <i data-lucide="code"></i>
@@ -130,6 +156,13 @@
         <footer></footer>
       </button>
       <button type="button" id="trad">
+        <a
+          href="../Jade-Colanges-trad-2026.pdf"
+          target="_blank"
+          class="download-link"
+        >
+          <i data-lucide="file-user"></i>
+        </a>
         <span class="tab-title"></span>
         <div>
           <i data-lucide="languages"></i>
@@ -141,6 +174,16 @@
         <footer></footer>
       </button>
       <button type="button" id="writer">
+        <a
+          href="https://instagram.com/jlc.jade"
+          target="_blank"
+          class="social-icon download-link"
+          aria-label="Instagram"
+        >
+          <svg width="24" height="24">
+            <use href="sprite.svg#icon-instagram" />
+          </svg>
+        </a>
         <span class="tab-title"></span>
         <div>
           <i data-lucide="book-open-text"></i>
@@ -154,10 +197,42 @@
     </section>
 
     <main>
-      <section class="skill-galaxy"></section>
-      <section class="project-zone"></section>
+      <section class="skill-galaxy" id="skills"></section>
+      <section class="project-zone" id="projects"></section>
     </main>
 
+    <footer class="main-footer">
+      <div class="contact-info">
+        <button type="button">Email</button>
+      </div>
+      <p>© 2026 Jade Colanges. Portfolio.</p>
+      <div>
+        <a
+          href="https://instagram.com/jlc.jade"
+          target="_blank"
+          class="social-icon"
+          aria-label="Instagram"
+        >
+          <svg width="24" height="24">
+            <use href="sprite.svg#icon-instagram" />
+          </svg>
+        </a>
+        <a
+          href="https://www.pinterest.com/jadelucycolanges"
+          target="_blank"
+          class="footer-social-icon"
+          aria-label="Pinterest"
+        >
+          <i data-lucide="brush"></i>
+        </a>
+        <a
+          href="mailto:jade.colanges@live.fr"
+          class="footer-social-icon"
+          aria-label="Email"
+          ><i data-lucide="mail"></i>
+        </a>
+      </div>
+    </footer>
     <script type="module" src="app.js"></script>
   </body>
 </html>

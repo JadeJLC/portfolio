@@ -6,6 +6,7 @@ import {
   domainCache,
   startImageRotation,
   getIcon,
+  equalizeProjectCards,
 } from "./helpers.js";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -77,6 +78,11 @@ document.addEventListener("click", (event) => {
   if (writeSwitchBtn) {
     switchDomain("writer");
   }
+
+  const bookActionBtn = event.target.closest(".multi-link");
+  if (bookActionBtn) {
+    bookActionBtn.classList.toggle("open");
+  }
 });
 
 /**
@@ -84,7 +90,10 @@ document.addEventListener("click", (event) => {
  * Dans les fichiers json associés
  * @param {String} domain Le domaine sélectionné
  */
-async function switchDomain(domain) {
+async function switchDomain(dom) {
+  if (dom == "dev" || dom == "trad" || dom == "writer") {
+    domain = dom;
+  }
   const tabs = document.querySelectorAll(".tabs button");
 
   tabs.forEach((tab) => {
@@ -106,6 +115,7 @@ async function switchDomain(domain) {
     const data = translationCache[language][key];
     setTimeout(() => {
       fillProjectsData(data, domain);
+      equalizeProjectCards();
       lucide.createIcons();
       document.body.classList.remove("faded");
     }, 200);
@@ -169,7 +179,11 @@ async function switchLanguage(lang) {
  */
 function fillHeaderData(headerData) {
   document.querySelector("header h1 span").textContent = headerData.intro;
-  document.querySelector(".contact-info button").innerHTML = headerData.email;
+  const contactLinks = [...document.querySelectorAll(".contact-info button")];
+
+  contactLinks.map((button) => {
+    button.innerHTML = headerData.email;
+  });
 
   ["#github", "#linkedin"].forEach((id) => {
     const el = document.querySelector(id);
@@ -178,7 +192,7 @@ function fillHeaderData(headerData) {
 
   ["skills", "bio", "contact", "projects"].forEach((key) => {
     const el = document.querySelector(`.main-menu #menu_${key}`);
-    if (el) el.textContent = headerData[`menu_${key}`];
+    if (el) el.innerHTML = `<a href="#${key}">${headerData[`menu_${key}`]}</a>`;
   });
 }
 
@@ -232,6 +246,9 @@ function fillTabData(tab, data) {
   tab.querySelector(".name").textContent = data.name;
   tab.querySelector(".subtitle").textContent = data.subtitle;
   tab.querySelector("footer").textContent = data.footer;
+  const downloadLink = tab.querySelector(".download-link");
+
+  if (downloadLink && data.cv) downloadLink.href = data.cv;
 }
 
 function fillProjectsData(projectList, domain) {
@@ -272,9 +289,18 @@ function createProjectElement(project) {
   <div class="project-link">
  ${project.links
    .map((link) => {
-     return `<a title="${link.title}" ${link.href ? `href="${link.href}"` : ""}>
+     if (link.hover) {
+       return `<div title="${link.title}" class="multi-link ${link.title.includes("avis") ? "review" : "buy"}">
+       ${link.hover}
+       ${getIcon(link.title)}
+       </div>`;
+     } else {
+       return `<a title="${link.title}" 
+     ${link.href ? `href="${link.href}"` : ""}>
+     ${link.hover ? link.hover : ""}
       ${getIcon(link.title)}
     </a>`;
+     }
    })
    .join("")}
   </div>

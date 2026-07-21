@@ -1,7 +1,7 @@
 {
   "header": {
     "intro": "Developer, writer, translator",
-    "email": "<i data-lucide=\"mail\"></i> Send me an email!",
+    "email": "<i data-lucide=\"mail\"></i> <span>Send me an email!</span>",
     "github": "View my projects on Github",
     "linkedin": "Check my LinkedIn profile",
     "menu_bio": "About me",
@@ -32,13 +32,15 @@
     "title": "Class • 01",
     "name": "Developer",
     "subtitle": "Code & Systems",
-    "footer": "Dev FullStack"
+    "footer": "Dev FullStack",
+    "cv": "Jade-Colanges-eng-dev-2026.pdf"
   },
   "tab_trad": {
     "title": "Class • 02",
     "name": "Translator",
     "subtitle": "Float between languages",
-    "footer": "EN → FR"
+    "footer": "EN → FR",
+    "cv": "Jade-Colanges-eng-trad-2026.pdf"
   },
   "tab_writer": {
     "title": "Class • 03",
@@ -168,6 +170,163 @@
       ]
     }
   ],
-  "trad_projects": [],
-  "writer_projects": []
+  "trad_projects": [
+    {
+      "id": "trad_01",
+      "name": "Bamblup: Motion To Win",
+      "description": "As part of an internship in Sweden, I worked with FirstAndTen on their game Bamblup: Motion To Win. My role involved writing the lore, dialogues and interface in English then translating them into French. I was also part of the brainstorming on new ideas for game element.",
+      "tags": ["FirstAndTen", "creativity"],
+      "tech_skills": ["English → French", "Teamwork"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Project Manager : Leslie Alfredson",
+          "href": "https://www.linkedin.com/in/leslie-alfredsson/"
+        }
+      ]
+    },
+    {
+      "id": "trad_02",
+      "name": "J-RPG",
+      "description": "Full translation and localization of a J-RPG, roughly 300k words of dialogue, quest descriptions, creative names (skills, creatures, places) and interface. The game was a sequel to several others, meaning consistency was a very important part of my job on the project.",
+      "tags": ["Keywords Studios", "creativity", "research"],
+      "tech_skills": ["English → French", "MemoQ"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Project Manager : Florie Abélard",
+          "href": "https://www.linkedin.com/in/florie-ab%C3%A9lard-9147b6b4/"
+        },
+        { "title": "Nom du jeu et client sous accord de confidentialité" }
+      ]
+    },
+    {
+      "id": "trad_03",
+      "name": "Blizzard Out Of Game",
+      "description": "Subtitles of a promotional video interview for an HearthStone extension. Other jobs for the same client and same project manager included several out-of-game elements, like update overview and announcements.",
+      "tags": ["Keywords Studios", "subtitling"],
+      "tech_skills": ["SubtitleEdit", "English → French"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Project Manager : Sylvain Lamole",
+          "href": "https://www.linkedin.com/in/sylvain-lamole-0579293/"
+        },
+        {
+          "title": "Client : Blizzard",
+          "href": "https://www.blizzard.com/fr-fr/"
+        }
+      ]
+    },
+    {
+      "id": "trad_04",
+      "name": "Avatar: Frontiers of Pandora",
+      "description": "Translation and localization of 60k words of scripts, dialogue and menus for the open-world RPG Avatar: Frontiers of Pandora (Ubisoft). I was part of a six-person localization and review team.<br/>We also translated game lore and found original French names for new plants and creatures.",
+      "tags": ["Keywords Studios", "creativity"],
+      "tech_skills": ["MemoQ", "English → French", "Teamwork"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Client : Ubisoft",
+          "href": "https://www.ubisoft.com/fr-fr/game/avatar/frontiers-of-pandora"
+        }
+      ]
+    },
+    {
+      "id": "trad_05",
+      "name": "MasterChef",
+      "description": "MTPE subtitles for 4 episodes of MasterChef on Amazon Prime. Most of the job included correcting mistranslations and missing context, as well as making the French version more idiomatic.",
+      "tags": ["WordMinds", "subtitling"],
+      "tech_skills": ["SubtitleEdit", "English → French", "MTPE"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Project Manager : Victor Bîbîlici",
+          "href": "https://www.linkedin.com/in/victor-b%C3%AEb%C3%AElici-9375b5245/"
+        },
+        {
+          "title": "Client : Amazon Prime",
+          "href": "https://www.primevideo.com/-/fr/detail/MasterChef/0IMN0DJFLDIS6JLW6GAPBIS8IS"
+        }
+      ]
+    },
+    {
+      "id": "trad_06",
+      "name": "Lovenest",
+      "description": "MTPE subtitles for the film LoveNest on Disney+. The job involved correcting character names, translating song lyrics and avoiding multiple repetitions of common words, as well as making the French version more fluid.",
+      "tags": ["WordMinds", "subtitling"],
+      "tech_skills": ["SubtitleEdit", "English → French", "MTPE"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Project Manager : Alina Castraşan",
+          "href": "https://www.linkedin.com/in/alina-castra%C5%9Fan-50ab644b/"
+        },
+        {
+          "title": "Client : Disney+",
+          "href": "https://www.disneyplus.com/home"
+        }
+      ]
+    },
+    {
+      "id": "trad_07",
+      "name": "Don't bother to knock",
+      "description": "MTPE subtitles for the film Don't bother to Knock on Disney+. Most of the job involved fixing mistakes in places and character names, ensuring a fluid and consistent French version and avoiding weird-sounding associations of words and sentences.",
+      "tags": ["WordMinds", "subtitling"],
+      "tech_skills": ["SubtitleEdit", "English → French", "MTPE"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Project Manager : Lilia Cusnir",
+          "href": "https://www.linkedin.com/in/lilia-cusnir-243908316/"
+        },
+        {
+          "title": "Client : Disney+",
+          "href": "https://www.disneyplus.com/home"
+        }
+      ]
+    },
+    {
+      "id": "trad_08",
+      "name": "Sword Art Online: Echoes of Aincrad",
+      "description": "J-RPG out on July 10th 2026. Being very familiar with the game series, I shared a lot of my information for the Term Base and translation memory to facilitate advancement in the project.",
+      "tags": ["Keywords Studios", "game expertise"],
+      "tech_skills": ["English → French", "MemoQ", "Teamwork"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Project Manager : Nicolas Matthew",
+          "href": "https://www.linkedin.com/in/oresama-09a841a5/"
+        },
+        {
+          "title": "Client : Bandai Namco",
+          "href": "https://fr.bandainamcoent.eu/sword-art-online/echoes-of-aincrad"
+        }
+      ]
+    }
+  ],
+  "writer_projects": [
+    {
+      "id": "write_02",
+      "name": "L'éveil' des Titans",
+      "description": "<strong>Les Secrets de May'zur - T2</strong>L'Éveil des Titans is currently not available in English. Interested in translation rights? Send me and email! <center>... <i data-lucide=\"at-sign\"></i> ...</center>",
+      "tags": ["Fantasy", "High Fantasy", "556 pages"],
+      "tech_skills": ["Creative writing", "Worldbuilding", "Self-publishing"],
+      "screenshots": [],
+      "links": [
+        { "title": "Contact me!", "href": "mailto:jade.colanges@live.fr" }
+      ]
+    },
+    {
+      "id": "write_01",
+      "name": "Les Joyaux des Titans",
+      "description": "<strong>Les Secrets de May'zur - T1</strong>L'Éveil des Titans is currently not available in English. Interested in translation rights? Send me and email! <center>... <i data-lucide=\"at-sign\"></i> ...</center>",
+      "tags": ["Fantasy", "High Fantasy", "540 pages"],
+      "tech_skills": ["Creative writing", "Worldbuilding", "Self-publishing"],
+      "screenshots": [],
+      "links": [
+        { "title": "Contact me!", "href": "mailto:jade.colanges@live.fr" }
+      ]
+    }
+  ]
 }

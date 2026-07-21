@@ -94,6 +94,28 @@ function getIcon(title) {
   return match ? match.icon : DEFAULT_ICON;
 }
 
+/**
+ * Fait en sorte que toutes les cartes projet visibles (.project-element)
+ * fassent la même hauteur : celle de la plus grande d'entre elles.
+ */
+function equalizeProjectCards() {
+  const cards = document.querySelectorAll(".project-element");
+  if (!cards.length) return;
+
+  cards.forEach((card) => {
+    card.style.height = "auto";
+  });
+
+  let maxHeight = 0;
+  cards.forEach((card) => {
+    maxHeight = Math.max(maxHeight, card.offsetHeight);
+  });
+
+  cards.forEach((card) => {
+    card.style.height = `${maxHeight}px`;
+  });
+}
+
 const DEFAULT_ICON = '<i data-lucide="external-link"></i>';
 
 const ICON_MAP = [
@@ -116,6 +138,18 @@ const ICON_MAP = [
     keywords: ["en cours", "in progress"],
     icon: '<i data-lucide="loader-circle"></i>',
   },
+  {
+    keywords: ["avis"],
+    icon: '<i data-lucide="library"></i>',
+  },
+  {
+    keywords: ["Acheter"],
+    icon: '<i data-lucide="shopping-cart"></i>',
+  },
+  {
+    keywords: ["Contact"],
+    icon: '<i data-lucide="mail"></i>',
+  },
 ];
 
 export {
@@ -126,4 +160,5 @@ export {
   domainCache,
   startImageRotation,
   getIcon,
+  equalizeProjectCards,
 };

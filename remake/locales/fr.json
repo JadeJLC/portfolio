@@ -1,7 +1,7 @@
 {
   "header": {
     "intro": "Développeuse, autrice, traductrice",
-    "email": "<i data-lucide=\"mail\"></i> Contactez-moi !",
+    "email": "<i data-lucide=\"mail\"></i> <span>Contactez-moi !</span>",
     "github": "Voir mes projets sur Github",
     "linkedin": "Voir mon profil LinkedIn",
     "menu_bio": "À propos",
@@ -32,13 +32,15 @@
     "title": "Classe • 01",
     "name": "Développeuse",
     "subtitle": "Code & Systèmes",
-    "footer": "Dev FullStack"
+    "footer": "Dev FullStack",
+    "cv": "Jade-Colanges-dev-2026.pdf"
   },
   "tab_trad": {
     "title": "Classe • 02",
     "name": "Traductrice",
     "subtitle": "D'une langue à l'autre",
-    "footer": "EN → FR"
+    "footer": "EN → FR",
+    "cv": "Jade-Colanges-trad-2026.pdf"
   },
   "tab_writer": {
     "title": "Classe • 03",
@@ -203,7 +205,7 @@
       "name": "Blizzard Out Of Game",
       "description": "Sous-titrage d'une interview vidéo promotionnelle pour une extension de HearthStone. Pour le même client et avec le même chef de projet, j'ai également travaillé sur d'autres projets \"Out of Game\", comme des notes de mise à jour et des annonces.",
       "tags": ["Keywords Studios", "sous-titrage"],
-      "tech_skills": ["SubtitleEdit", "Anglais → Français"],
+      "tech_skills": ["Anglais → Français", "SubtitleEdit"],
       "screenshots": [],
       "links": [
         {
@@ -221,7 +223,7 @@
       "name": "Avatar: Frontiers of Pandora",
       "description": "Traduction et localisation de 60k mots de doublages, dialogues et menus du RPG en monde ouvert Avatar : Frontiers of Pandora (Ubisoft). Je faisais partie d'une équipe de six traducteurs et relecteurs.<br/>Nous avons également traduit le lore du jeu et les noms des plantes et créatures inventés.",
       "tags": ["Keywords Studios", "creativité"],
-      "tech_skills": ["MemoQ", "Anglais → Français", "Travail d'équipe"],
+      "tech_skills": ["Anglais → Français", "MemoQ", "Travail d'équipe"],
       "screenshots": [],
       "links": [
         {
@@ -235,7 +237,7 @@
       "name": "MasterChef",
       "description": "Sous-titrage en MTPE de 4 épisodes de MasterChef pour Amazon Prime (161 minutes). Le travail consistait majoritairement à corriger des erreurs de traduction et de contextualisation, ainsi qu'à rendre la version française plus idiomatique.",
       "tags": ["WordMinds", "sous-titrage"],
-      "tech_skills": ["SubtitleEdit", "Anglais → Français", "MTPE"],
+      "tech_skills": ["Anglais → Français", "SubtitleEdit", "MTPE"],
       "screenshots": [],
       "links": [
         {
@@ -253,7 +255,7 @@
       "name": "Lovenest",
       "description": "Sous-titrage en MTPE du film LoveNest pour Disney+ (85 minutes). La correction en MTPE impliquait de corriger des noms de personnages, de traduire correctement des paroles de chanson et d'éviter les répétitions multiples sur certains termes, en plus de rendre le français plus naturel.",
       "tags": ["WordMinds", "sous-titrage"],
-      "tech_skills": ["SubtitleEdit", "Anglais → Français", "MTPE"],
+      "tech_skills": ["Anglais → Français", "SubtitleEdit", "MTPE"],
       "screenshots": [],
       "links": [
         {
@@ -271,7 +273,7 @@
       "name": "Don't bother to knock",
       "description": "Sous-titrage en MTPE du film Don't bother to Knock pour Disney+ (72 minutes). Le travail consistait majoritairement à corriger des erreurs dans des noms de lieux et de personnages, d'assurer une version française cohérente et fluide et d'éviter des tournures de phrases étranges.",
       "tags": ["WordMinds", "sous-titrage"],
-      "tech_skills": ["SubtitleEdit", "Anglais → Français", "MTPE"],
+      "tech_skills": ["Anglais → Français", "SubtitleEdit", "MTPE"],
       "screenshots": [],
       "links": [
         {
@@ -287,7 +289,7 @@
     {
       "id": "trad_08",
       "name": "Sword Art Online: Echoes of Aincrad",
-      "description": "J-RPG sorti le 10 juillet 2026. Connaissant bien la série du jeu, j'ai partagé la plupart de mes connaissances pour remplir le lexique et la mémoire de traduction et ainsi faciliter l'avancement du projet. L'équipe du projet a actuellement traduit et relu environ 200k mots.",
+      "description": "J-RPG sorti le 10 juillet 2026. Connaissant bien la série du jeu, j'ai partagé la plupart de mes connaissances pour remplir le lexique et la mémoire de traduction et ainsi faciliter l'avancement du projet.",
       "tags": ["Keywords Studios", "expertise jeux"],
       "tech_skills": ["Anglais → Français", "MemoQ", "Travail d'équipe"],
       "screenshots": [],
@@ -303,5 +305,44 @@
       ]
     }
   ],
-  "writer_projects": []
+  "writer_projects": [
+    {
+      "id": "write_02",
+      "name": "L'éveil' des Titans",
+      "description": "<strong>Les Secrets de May'zur - T2</strong>La cité souterraine de Zephdon n'a laissé personne indemne. Kinn'yah se débat entre angoisses et mauvais souvenirs tandis que Karel est envahi de nouvelles questions. Partagé entre des pouvoirs de plus en plus difficiles à contrôler et des sentiments impossibles à envisager, il prend la route du Sud au côté de la princesse.<br/><br/>L'avenir est fait de sacrifices, encore faut-il pouvoir y consentir...<center>... <i data-lucide=\"book-open-text\"></i> ...</center>",
+      "tags": ["Fantasy", "High Fantasy", "556 pages"],
+      "tech_skills": ["Écriture", "Worldbuilding", "Auto-édition"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Laisser un avis",
+          "hover": "<ul class=\"project-card\">Laisser un avis sur :<br><div><li>  <a href=\"https://booknode.com/les_secrets_de_mayzur_tome_2_leveil_des_titans_03613747\">Booknode</a></li><li>  <a href=\"https://www.babelio.com/livres/Colanges-Leveil-des-Titans/1925374\">Babelio</a></li></div></ul>"
+        },
+
+        {
+          "title": "Acheter",
+          "hover": "<ul class=\"project-card\">Commandez-le chez votre libraire préféré ou sur :<br><div><li>  <a href=\"https://librairie.bod.fr/leveil-des-titans-jade-lucy-colanges-9782322657988\">BoD (ebook)</a></li><li>  <a href=\"https://www.amazon.fr/-/en/Jade-Lucy-Colanges/dp/2322498076\">Amazon</a></li><li>  <a href=\"https://www.fnac.com/a21099863/Jade-Lucy-Colanges-L-eveil-des-Titans\">Fnac</a></li><li>  <a href=\"https://www.cultura.com/p-l-eveil-des-titans-11713468.html\">Cultura</a></li></div></ul>"
+        }
+      ]
+    },
+    {
+      "id": "write_01",
+      "name": "Les Joyaux des Titans",
+      "description": "<strong>Les Secrets de May'zur - T1</strong>Dix ans d'entraînement, d'observation, de préparation. Durant toutes ces années, Karel a convoité les joyaux des Titans, des gemmes précieuses conservées au palais royal censées lui fournir l'argent nécessaire pour sortir de la rue. Il lui suffit de les vendre et il pourra enfin changer de vie. C'était le projet de toute son existence.<br/><br/>Mais les souhaits ne se réalisent pas toujours comme prévu.<center>... <i data-lucide=\"book-open-text\"></i> ...</center>",
+      "tags": ["Fantasy", "High Fantasy", "540 pages"],
+      "tech_skills": ["Écriture", "Worldbuilding", "Auto-édition"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Laisser un avis",
+          "hover": "<ul class=\"project-card\">Laisser un avis sur :<br><div><li>  <a href=\"https://booknode.com/les_secrets_de_mayzur_tome_1_les_joyaux_des_titans_03544026\">Booknode</a></li><li>  <a href=\"https://www.babelio.com/livres/Colanges-Les-Joyaux-des-Titans-1/1585719\">Babelio</a></li></div></ul>"
+        },
+
+        {
+          "title": "Acheter",
+          "hover": "<ul class=\"project-card\">Commandez-le chez votre libraire préféré ou sur :<br><div><li>  <a href=\"https://librairie.bod.fr/les-joyaux-des-titans-jade-lucy-colanges-9782322566211\">BoD (ebook)</a></li><li>  <a href=\"https://www.amazon.fr/Joyaux-Titans-Jade-Lucy-Colanges/dp/2322499471\">Amazon</a></li><li>  <a href=\"https://www.fnac.com/a19277321/Jade-Lucy-Colanges-Les-Joyaux-des-Titans\">Fnac</a></li><li>  <a href=\"https://www.cultura.com/p-les-joyaux-des-titans-1-9782322499472.html\">Cultura</a></li></div></ul>"
+        }
+      ]
+    }
+  ]
 }

@@ -14,7 +14,8 @@
     "level": "Nv.",
     "spec": "Multiclasse",
     "three": "Trois façons ",
-    "quote": "L’art seul peut s’accorder le privilège d’affirmer les tourments et les joies du cœur. Par nature implicite, il est la plus discrète et la plus belle des manières de faire virevolter les sentiments."
+    "quote": "L’art seul peut s’accorder le privilège d’affirmer les tourments et les joies du cœur. Par nature implicite, il est la plus discrète et la plus belle des manières de faire virevolter les sentiments.",
+    "skill_title": "Compétences"
   },
   "rotations": {
     "life": "donner vie à des idées",
@@ -57,7 +58,10 @@
       "tech_skills": ["HTML", "CSS", "JavaScript"],
       "screenshots": ["./screenshots/dea-groups.png"],
       "links": [
-        { "title": "Indarë", "href": "https://indare.forumactif.com/" },
+        {
+          "title": "Indarë",
+          "href": "https://indare.forumactif.com/"
+        },
         {
           "title": "Dea Kademeia",
           "href": "https://dea-kademeia.forumactif.com/"
@@ -98,7 +102,9 @@
           "title": "Github public",
           "href": "https://github.com/JadeJLC/HamsterCare"
         },
-        { "title": "Projet en cours" }
+        {
+          "title": "Projet en cours"
+        }
       ]
     },
     {
@@ -197,7 +203,9 @@
           "title": "Cheffe de projet : Florie Abélard",
           "href": "https://www.linkedin.com/in/florie-ab%C3%A9lard-9147b6b4/"
         },
-        { "title": "Nom du jeu et client sous accord de confidentialité" }
+        {
+          "title": "Nom du jeu et client sous accord de confidentialité"
+        }
       ]
     },
     {
@@ -318,7 +326,6 @@
           "title": "Laisser un avis",
           "hover": "<ul class=\"project-card\">Laisser un avis sur :<br><div><li>  <a href=\"https://booknode.com/les_secrets_de_mayzur_tome_2_leveil_des_titans_03613747\">Booknode</a></li><li>  <a href=\"https://www.babelio.com/livres/Colanges-Leveil-des-Titans/1925374\">Babelio</a></li></div></ul>"
         },
-
         {
           "title": "Acheter",
           "hover": "<ul class=\"project-card\">Commandez-le chez votre libraire préféré ou sur :<br><div><li>  <a href=\"https://librairie.bod.fr/leveil-des-titans-jade-lucy-colanges-9782322657988\">BoD (ebook)</a></li><li>  <a href=\"https://www.amazon.fr/-/en/Jade-Lucy-Colanges/dp/2322498076\">Amazon</a></li><li>  <a href=\"https://www.fnac.com/a21099863/Jade-Lucy-Colanges-L-eveil-des-Titans\">Fnac</a></li><li>  <a href=\"https://www.cultura.com/p-l-eveil-des-titans-11713468.html\">Cultura</a></li></div></ul>"
@@ -337,12 +344,265 @@
           "title": "Laisser un avis",
           "hover": "<ul class=\"project-card\">Laisser un avis sur :<br><div><li>  <a href=\"https://booknode.com/les_secrets_de_mayzur_tome_1_les_joyaux_des_titans_03544026\">Booknode</a></li><li>  <a href=\"https://www.babelio.com/livres/Colanges-Les-Joyaux-des-Titans-1/1585719\">Babelio</a></li></div></ul>"
         },
-
         {
           "title": "Acheter",
           "hover": "<ul class=\"project-card\">Commandez-le chez votre libraire préféré ou sur :<br><div><li>  <a href=\"https://librairie.bod.fr/les-joyaux-des-titans-jade-lucy-colanges-9782322566211\">BoD (ebook)</a></li><li>  <a href=\"https://www.amazon.fr/Joyaux-Titans-Jade-Lucy-Colanges/dp/2322499471\">Amazon</a></li><li>  <a href=\"https://www.fnac.com/a19277321/Jade-Lucy-Colanges-Les-Joyaux-des-Titans\">Fnac</a></li><li>  <a href=\"https://www.cultura.com/p-les-joyaux-des-titans-1-9782322499472.html\">Cultura</a></li></div></ul>"
         }
       ]
+    }
+  ],
+  "dev_skills": [
+    {
+      "type": "langage",
+      "name": "HTML",
+      "position": {
+        "x": 40.78,
+        "y": 32.81
+      }
+    },
+    {
+      "type": "langage",
+      "name": "CSS",
+      "position": {
+        "x": 20.44,
+        "y": 60.52
+      }
+    },
+    {
+      "type": "langage",
+      "name": "JavaScript",
+      "position": {
+        "x": 90.25,
+        "y": 37.36
+      }
+    },
+    {
+      "type": "langage",
+      "name": "Go",
+      "position": {
+        "x": 77.5,
+        "y": 53.51
+      }
+    },
+    {
+      "type": "langage",
+      "name": "Rust",
+      "position": {
+        "x": 31.66,
+        "y": 16.85
+      }
+    },
+    {
+      "type": "langage",
+      "name": "Java",
+      "position": {
+        "x": 57.64,
+        "y": 72.34
+      }
+    },
+    {
+      "type": "langage",
+      "name": "Python",
+      "position": {
+        "x": 28.7,
+        "y": 46.49
+      }
+    },
+    {
+      "type": "données",
+      "name": "SQL",
+      "position": {
+        "x": 62.32,
+        "y": 87.5
+      }
+    },
+    {
+      "type": "données",
+      "name": "GraphQL",
+      "position": {
+        "x": 89.76,
+        "y": 55.91
+      }
+    },
+    {
+      "type": "données",
+      "name": "API REST",
+      "position": {
+        "x": 66.43,
+        "y": 34.24
+      }
+    },
+    {
+      "type": "outil",
+      "name": "Git",
+      "position": {
+        "x": 20.24,
+        "y": 37.3
+      }
+    },
+    {
+      "type": "méthode",
+      "name": "Algorithmique",
+      "position": {
+        "x": 36.49,
+        "y": 75.31
+      }
+    },
+    {
+      "type": "sécurité",
+      "name": "OAuth",
+      "position": {
+        "x": 54.31,
+        "y": 24.03
+      }
+    },
+    {
+      "type": "sécurité",
+      "name": "JWT",
+      "position": {
+        "x": 68.03,
+        "y": 22.17
+      }
+    },
+    {
+      "type": "framework",
+      "name": "Spring",
+      "position": {
+        "x": 78.65,
+        "y": 31.21
+      }
+    }
+  ],
+  "trad_skills": [
+    {
+      "type": "outil",
+      "name": "MemoQ",
+      "position": {
+        "x": 59,
+        "y": 22.59
+      }
+    },
+    {
+      "type": "outil",
+      "name": "SubtitleEdit",
+      "position": {
+        "x": 23.4,
+        "y": 54.66
+      }
+    },
+    {
+      "type": "outil",
+      "name": "Crowdin",
+      "position": {
+        "x": 52.47,
+        "y": 87.29
+      }
+    },
+    {
+      "type": "langue",
+      "name": "Anglais",
+      "position": {
+        "x": 38.91,
+        "y": 66.8
+      }
+    },
+    {
+      "type": "langue",
+      "name": "Français",
+      "position": {
+        "x": 73.23,
+        "y": 12.63
+      }
+    },
+    {
+      "type": "rôle",
+      "name": "Traduction",
+      "position": {
+        "x": 93.28,
+        "y": 34.21
+      }
+    },
+    {
+      "type": "rôle",
+      "name": "LQA",
+      "position": {
+        "x": 40.14,
+        "y": 32.87
+      }
+    },
+    {
+      "type": "rôle",
+      "name": "MTPE",
+      "position": {
+        "x": 69.24,
+        "y": 53.6
+      }
+    },
+    {
+      "type": "domaine",
+      "name": "Linguistique",
+      "position": {
+        "x": 17.12,
+        "y": 26.57
+      }
+    },
+    {
+      "type": "domaine",
+      "name": "Jeux vidéo",
+      "position": {
+        "x": 14.85,
+        "y": 64.01
+      }
+    },
+    {
+      "type": "domaine",
+      "name": "Littérature (fiction)",
+      "position": {
+        "x": 52.34,
+        "y": 12.02
+      }
+    }
+  ],
+  "writer_skills": [
+    {
+      "type": "genre",
+      "name": "Fantasy",
+      "position": {
+        "x": 25.65,
+        "y": 47.99
+      }
+    },
+    {
+      "type": "genre",
+      "name": "Heroic Fantasy",
+      "position": {
+        "x": 54.31,
+        "y": 24.03
+      }
+    },
+    {
+      "type": "expertise",
+      "name": "Worldbuilding",
+      "position": {
+        "x": 48.2,
+        "y": 74.45
+      }
+    },
+    {
+      "type": "expertise",
+      "name": "Dialogues",
+      "position": {
+        "x": 33.58,
+        "y": 12.45
+      }
+    },
+    {
+      "type": "expertise",
+      "name": "Linguistique",
+      "position": {
+        "x": 63.21,
+        "y": 66.39
+      }
     }
   ]
 }

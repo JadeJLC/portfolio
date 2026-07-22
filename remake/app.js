@@ -85,6 +85,23 @@ document.addEventListener("click", (event) => {
   }
 });
 
+document.addEventListener("mouseover", (event) => {
+  const node = event.target.closest(".skill-node");
+  if (!node) return;
+  const type = node.dataset.type;
+  document
+    .querySelectorAll(`.galaxy-links line[data-type="${type}"]`)
+    .forEach((line) => line.classList.add("active"));
+});
+
+document.addEventListener("mouseout", (event) => {
+  const node = event.target.closest(".skill-node");
+  if (!node) return;
+  document
+    .querySelectorAll(".galaxy-links line.active")
+    .forEach((line) => line.classList.remove("active"));
+});
+
 /**
  * Gère le changement de domaine en récupérant les données nécessaires
  * Dans les fichiers json associés
@@ -103,21 +120,38 @@ async function switchDomain(dom) {
   document.getElementById(domain).classList.add("active");
   sessionStorage.setItem("domain", domain);
 
-  document.body.classList.add("faded");
-
   try {
     if (!translationCache[language]) {
       const response = await fetch(`locales/${language}.json`);
       translationCache[language] = await response.json();
     }
 
-    const key = `${domain}_projects`;
-    const data = translationCache[language][key];
+    const projectKey = `${domain}_projects`;
+    const projectData = translationCache[language][projectKey];
+
+    const skillsKey = `${domain}_skills`;
+    const skillData = translationCache[language][skillsKey];
+
+    const galaxy = document.querySelector(".skill-galaxy");
+    galaxy.classList.add("hidden");
+
+    const domainBlock = document.querySelector(".domain-block");
+    console.log(domainBlock);
+    domainBlock.classList.add("faded");
+    console.log(domainBlock);
+
     setTimeout(() => {
-      fillProjectsData(data, domain);
+      fillProjectsData(projectData, domain);
+      fillSkillGalaxy(
+        skillData,
+        domain,
+        translationCache[language].sheet.skill_title,
+      );
       equalizeProjectCards();
       lucide.createIcons();
-      document.body.classList.remove("faded");
+      domainBlock.classList.remove("faded");
+      console.log(domainBlock);
+      galaxy.classList.remove("hidden");
     }, 200);
   } catch (error) {
     console.error("Failed to load domain data:", error);
@@ -158,6 +192,7 @@ async function switchLanguage(lang) {
     }
 
     const data = translationCache[language];
+
     setTimeout(() => {
       fillHeaderData(data.header);
       fillSheetData(data, language);
@@ -256,7 +291,7 @@ function fillProjectsData(projectList, domain) {
   projectZone.classList.remove("trad", "dev", "writer");
   projectZone.classList.add(domain);
 
-  projectZone.innerHTML = "";
+  projectZone.innerHTML = ` <h2>${language == "fr" ? "Projets" : "Projects"}</h2>`;
   projectList = projectList.reverse();
 
   projectList.forEach((project) => {
@@ -320,4 +355,82 @@ function createProjectElement(project) {
    `;
 
   return container;
+}
+
+function fillSkillGalaxy(skills, data, title) {
+  const svg = document.querySelector(".galaxy-links");
+  const nodesZone = document.querySelector(".galaxy-nodes");
+  svg.innerHTML = "";
+  nodesZone.innerHTML = "";
+
+  document.querySelector(".skill-galaxy h2").textContent = title;
+
+  const center = document.querySelector(".galaxy-center");
+
+  switch (domain) {
+    case "dev":
+      center.innerHTML = `<i data-lucide="code"></i>`;
+      break;
+    case "trad":
+      center.innerHTML = `<i data-lucide="languages"></i>`;
+      break;
+    case "writer":
+      center.innerHTML = `<i data-lucide="book-open-text"></i>`;
+      break;
+  }
+
+  // Lignes : contour reliant les compétences d'un même type, dans l'ordre
+  // de leur angle autour du centre (comme une constellation)
+  const byType = {};
+  skills.forEach((s) => (byType[s.type] ??= []).push(s));
+
+  Object.values(byType).forEach((group) => {
+    if (group.length < 2) return; // rien à relier pour un groupe isolé
+
+    const sorted = [...group].sort((a, b) => {
+      const angleA = Math.atan2(a.position.y - 50, a.position.x - 50);
+      const angleB = Math.atan2(b.position.y - 50, b.position.x - 50);
+      return angleA - angleB;
+    });
+
+    for (let i = 0; i < sorted.length - 1; i++) {
+      const line = document.createElementNS(
+        "http://www.w3.org/2000/svg",
+        "line",
+      );
+      line.setAttribute("x1", sorted[i].position.x);
+      line.setAttribute("y1", sorted[i].position.y);
+      line.setAttribute("x2", sorted[i + 1].position.x);
+      line.setAttribute("y2", sorted[i + 1].position.y);
+      line.dataset.type = sorted[i].type;
+      svg.appendChild(line);
+    }
+
+    if (sorted.length >= 3) {
+      const first = sorted[0];
+      const last = sorted[sorted.length - 1];
+      const closingLine = document.createElementNS(
+        "http://www.w3.org/2000/svg",
+        "line",
+      );
+      closingLine.setAttribute("x1", last.position.x);
+      closingLine.setAttribute("y1", last.position.y);
+      closingLine.setAttribute("x2", first.position.x);
+      closingLine.setAttribute("y2", first.position.y);
+      closingLine.dataset.type = first.type;
+      svg.appendChild(closingLine);
+    }
+  });
+
+  // Nodes
+  skills.forEach((skill) => {
+    const node = document.createElement("div");
+    node.className = "skill-node";
+    node.classList.add(skill.type);
+    node.dataset.type = skill.type;
+    node.style.left = `${skill.position.x}%`;
+    node.style.top = `${skill.position.y}%`;
+    node.innerHTML = `<span class="skill-name">${skill.name}</span><span class="skill-type">${skill.type}</span>`;
+    nodesZone.appendChild(node);
+  });
 }

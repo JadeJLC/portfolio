@@ -14,7 +14,8 @@
     "level": "Lv.",
     "spec": "Multiclass",
     "three": "Three ways to",
-    "quote": "Only art has the privilege to display the torments and joys of the heart. Implicit by nature, it's the most discreet yet beautiful way to show the flight of feelings."
+    "quote": "Only art has the privilege to display the torments and joys of the heart. Implicit by nature, it's the most discreet yet beautiful way to show the flight of feelings.",
+    "skill_title": "Skills"
   },
   "rotations": {
     "life": "bring ideas to life",
@@ -57,7 +58,10 @@
       "tech_skills": ["HTML", "CSS", "JavaScript"],
       "screenshots": [],
       "links": [
-        { "title": "Indarë", "href": "https://indare.forumactif.com/" },
+        {
+          "title": "Indarë",
+          "href": "https://indare.forumactif.com/"
+        },
         {
           "title": "Dea Kademeia",
           "href": "https://dea-kademeia.forumactif.com/"
@@ -98,7 +102,9 @@
           "title": "Public Github",
           "href": "https://github.com/JadeJLC/HamsterCare"
         },
-        { "title": "Work in progress" }
+        {
+          "title": "Work in progress"
+        }
       ]
     },
     {
@@ -197,7 +203,9 @@
           "title": "Project Manager : Florie Abélard",
           "href": "https://www.linkedin.com/in/florie-ab%C3%A9lard-9147b6b4/"
         },
-        { "title": "Nom du jeu et client sous accord de confidentialité" }
+        {
+          "title": "Nom du jeu et client sous accord de confidentialité"
+        }
       ]
     },
     {
@@ -314,7 +322,10 @@
       "tech_skills": ["Creative writing", "Worldbuilding", "Self-publishing"],
       "screenshots": [],
       "links": [
-        { "title": "Contact me!", "href": "mailto:jade.colanges@live.fr" }
+        {
+          "title": "Contact me!",
+          "href": "mailto:jade.colanges@live.fr"
+        }
       ]
     },
     {
@@ -325,8 +336,265 @@
       "tech_skills": ["Creative writing", "Worldbuilding", "Self-publishing"],
       "screenshots": [],
       "links": [
-        { "title": "Contact me!", "href": "mailto:jade.colanges@live.fr" }
+        {
+          "title": "Contact me!",
+          "href": "mailto:jade.colanges@live.fr"
+        }
       ]
+    }
+  ],
+  "dev_skills": [
+    {
+      "type": "language",
+      "name": "HTML",
+      "position": {
+        "x": 40.78,
+        "y": 32.81
+      }
+    },
+    {
+      "type": "language",
+      "name": "CSS",
+      "position": {
+        "x": 20.44,
+        "y": 60.52
+      }
+    },
+    {
+      "type": "language",
+      "name": "JavaScript",
+      "position": {
+        "x": 90.25,
+        "y": 37.36
+      }
+    },
+    {
+      "type": "language",
+      "name": "Go",
+      "position": {
+        "x": 77.5,
+        "y": 53.51
+      }
+    },
+    {
+      "type": "language",
+      "name": "Rust",
+      "position": {
+        "x": 31.66,
+        "y": 16.85
+      }
+    },
+    {
+      "type": "language",
+      "name": "Java",
+      "position": {
+        "x": 57.64,
+        "y": 72.34
+      }
+    },
+    {
+      "type": "language",
+      "name": "Python",
+      "position": {
+        "x": 28.7,
+        "y": 46.49
+      }
+    },
+    {
+      "type": "data",
+      "name": "SQL",
+      "position": {
+        "x": 62.32,
+        "y": 87.5
+      }
+    },
+    {
+      "type": "data",
+      "name": "GraphQL",
+      "position": {
+        "x": 89.76,
+        "y": 55.91
+      }
+    },
+    {
+      "type": "data",
+      "name": "API REST",
+      "position": {
+        "x": 66.43,
+        "y": 34.24
+      }
+    },
+    {
+      "type": "tool",
+      "name": "Git",
+      "position": {
+        "x": 20.24,
+        "y": 37.3
+      }
+    },
+    {
+      "type": "method",
+      "name": "Algorithms",
+      "position": {
+        "x": 36.49,
+        "y": 75.31
+      }
+    },
+    {
+      "type": "security",
+      "name": "OAuth",
+      "position": {
+        "x": 54.31,
+        "y": 24.03
+      }
+    },
+    {
+      "type": "security",
+      "name": "JWT",
+      "position": {
+        "x": 68.03,
+        "y": 22.17
+      }
+    },
+    {
+      "type": "framework",
+      "name": "Spring",
+      "position": {
+        "x": 78.65,
+        "y": 31.21
+      }
+    }
+  ],
+  "trad_skills": [
+    {
+      "type": "tool",
+      "name": "MemoQ",
+      "position": {
+        "x": 59,
+        "y": 22.59
+      }
+    },
+    {
+      "type": "tool",
+      "name": "SubtitleEdit",
+      "position": {
+        "x": 23.4,
+        "y": 54.66
+      }
+    },
+    {
+      "type": "tool",
+      "name": "Crowdin",
+      "position": {
+        "x": 52.47,
+        "y": 87.29
+      }
+    },
+    {
+      "type": "language",
+      "name": "English",
+      "position": {
+        "x": 38.91,
+        "y": 66.8
+      }
+    },
+    {
+      "type": "language",
+      "name": "French",
+      "position": {
+        "x": 73.23,
+        "y": 12.63
+      }
+    },
+    {
+      "type": "role",
+      "name": "Translation",
+      "position": {
+        "x": 93.28,
+        "y": 34.21
+      }
+    },
+    {
+      "type": "role",
+      "name": "LQA",
+      "position": {
+        "x": 40.14,
+        "y": 32.87
+      }
+    },
+    {
+      "type": "role",
+      "name": "MTPE",
+      "position": {
+        "x": 69.24,
+        "y": 53.6
+      }
+    },
+    {
+      "type": "domain",
+      "name": "Linguistics",
+      "position": {
+        "x": 17.12,
+        "y": 26.57
+      }
+    },
+    {
+      "type": "domain",
+      "name": "Video games",
+      "position": {
+        "x": 14.85,
+        "y": 64.01
+      }
+    },
+    {
+      "type": "domain",
+      "name": "Literature (fiction)",
+      "position": {
+        "x": 52.34,
+        "y": 12.02
+      }
+    }
+  ],
+  "writer_skills": [
+    {
+      "type": "genre",
+      "name": "Fantasy",
+      "position": {
+        "x": 25.65,
+        "y": 47.99
+      }
+    },
+    {
+      "type": "genre",
+      "name": "Heroic Fantasy",
+      "position": {
+        "x": 54.31,
+        "y": 24.03
+      }
+    },
+    {
+      "type": "expertise",
+      "name": "Worldbuilding",
+      "position": {
+        "x": 48.2,
+        "y": 74.45
+      }
+    },
+    {
+      "type": "expertise",
+      "name": "Dialogues",
+      "position": {
+        "x": 33.58,
+        "y": 12.45
+      }
+    },
+    {
+      "type": "expertise",
+      "name": "Linguistics",
+      "position": {
+        "x": 63.21,
+        "y": 66.39
+      }
     }
   ]
 }

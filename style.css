@@ -310,7 +310,7 @@ header h1 span {
   display: flex !important;
   align-items: center;
   gap: 5px;
-  min-width: 195px;
+  /* min-width: 195px; */
   justify-content: center;
   color: inherit;
   font-size: inherit;

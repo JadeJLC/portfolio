@@ -958,6 +958,10 @@ ul {
   transform: translateX(-50%);
   border-bottom: 1px dashed var(--color-faded-gold);
 }
+
+.main-footer svg:hover {
+  color: var(--color-golden);
+}
 /* #endregion */
 
 /* #region ***** Galaxie de compétences */

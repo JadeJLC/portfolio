@@ -114,6 +114,33 @@ html {
   scroll-padding-top: 100px;
   scroll-behavior: smooth;
 }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  height: 12px;
+  width: 7px;
+  background: var(--color-dark);
+  margin-right: 5px;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-main);
+  height: 30px;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-corner {
+  background: none;
+}
+
+::-moz-selection {
+  background-color: var(--color-shine);
+  color: var(--color-dark);
+}
+
+::selection {
+  background-color: var(--color-shine);
+  color: var(--color-dark);
+}
 /* #endregion */
 
 /* #region ***** header */

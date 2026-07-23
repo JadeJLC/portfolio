@@ -216,7 +216,7 @@ async function switchLanguage(lang) {
  */
 function fillHeaderData(headerData) {
   document.querySelector("header h1 span").textContent = headerData.intro;
-  const contactLinks = [...document.querySelectorAll(".contact-info button")];
+  const contactLinks = [...document.querySelectorAll(".contact-info button a")];
 
   contactLinks.map((button) => {
     button.innerHTML = headerData.email;

@@ -3,1209 +3,247 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <meta
-      name="google-site-verification"
-      content="wZ6PXV0G8NkTaZRM02SgOEV3e_mnq0wdXK5wwFEpo68"
-    />
-
-    <title>
-      Jade Colanges | Portfolio - Développeuse, Traductrice & Autrice |
-      Developer, Translator & Author
-    </title>
-    <meta
-      name="description"
-      content="Découvrez le portfolio de Jade Colanges : dév web, traduction EN-FR et fantasy. / Explore Jade Colanges' portfolio: web dev, EN-FR translation and fantasy writing."
-    />
-    <meta
-      name="keywords"
-      content="Jade Colanges, Jade Lucy Colanges, Portfolio, Développement Web, Web Development, Traduction anglais français, English to French Translation, Autrice Fantasy, Fantasy Author, Les Secrets de May'zur, Game Dev, Localisation, Localization"
-    />
-    <meta name="author" content="Jade Colanges" />
-
-    <meta
-      property="og:title"
-      content="Jade Colanges | Portfolio - Développeuse, Traductrice & Autrice | Developer, Translator & Author"
-    />
-    <meta
-      property="og:description"
-      content="Découvrez mon univers : code, langues et écriture. / Explore my world: code, languages and writing. Web dev, localization & fantasy novels."
-    />
-    <meta property="og:url" content="https://jadejlc.github.io/portfolio/" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://jadejlc.github.io/portfolio/preview.png"
-    />
+    <title>Jade Colanges - Portfolio</title>
 
     <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
   </head>
+  <body>
+    <header>
+      <aside>
+        <img
+          src="ressources/internal-circle.png"
+          alt="Cadre intérieur"
+          class="rotating-reverse internal-circle"
+          aria-hidden="true"
+        />
+        <img
+          src="ressources/external-circle.png"
+          alt="Cadre extérieur"
+          class="rotating-normal external-circle"
+          aria-hidden="true"
+        />
+        <span class="shiny-font" aria-hidden="true">JC</span>
+      </aside>
 
-  <body data-active-domain="dev">
-    <!-- #region ***** Navigation -->
-    <header class="main-header">
-      <div class="header-content">
-        <a href="#" class="logo">Jade Colanges</a>
+      <h1 class="shiny-font">
+        Jade Colanges
+        <span></span>
+      </h1>
 
-        <!-- #region ***** Sélecteur de langue -->
-        <nav class="language-selector" id="language-selector">
-          <button
-            class="lang-btn active"
-            data-lang="en"
-            title="Switch to English"
-          >
-            🇬🇧
-          </button>
-          <button class="lang-btn" data-lang="fr" title="Voir en français">
-            🇫🇷
-          </button>
-        </nav>
-        <!-- #endregion -->
+      <section class="main-buttons">
+        <div class="switch-language">
+          <button type="button" id="english">🇬🇧 EN</button>
+          <button type="button" id="french" class="active">🇫🇷 FR</button>
+        </div>
+        <div class="contact-info">
+          <button type="button">Email</button>
+        </div>
+        <div class="pro-links">
+          <!--Logo Github-->
+          <a href="https://github.com/JadeJLC" target="_blank" id="github">
+            <svg width="24" height="24">
+              <use href="sprite.svg#icon-github" />
+            </svg>
+          </a>
 
-        <!-- #region ***** Choix du domaine à afficher -->
-        <nav class="domain-selector" id="domain-selector">
-          <button
-            class="domain-btn active"
-            data-domain-id="dev"
-            data-i18n="domain_dev"
-          >
-            Developer
-          </button>
-          <button
-            class="domain-btn"
-            data-domain-id="translator"
-            data-i18n="domain_trad"
-          >
-            Translator
-          </button>
-          <button
-            class="domain-btn"
-            data-domain-id="writer"
-            data-i18n="domain_write"
-          >
-            Writer
-          </button>
-        </nav>
-        <!-- #endregion -->
-
-        <!-- #region ***** Boutons de navigation -->
-        <nav class="main-nav">
-          <a href="#about" class="nav-link" data-i18n="nav_about"></a>
-          <a href="#skills" class="nav-link" data-i18n="nav_skills"></a>
-          <a href="#projects" class="nav-link" data-i18n="nav_projects"></a>
+          <!-- Logo linkedin-->
           <a
-            href="mailto:jade.colanges@live.fr"
-            class="nav-link"
-            data-i18n="nav_contact"
-          ></a>
-        </nav>
-        <!-- Menu pour téléphone -->
-        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
-          <i data-lucide="menu" class="icon-menu"></i>
-        </button>
-        <ul id="mobile-menu">
-          <li>
-            <a href="#about" class="nav-link" data-i18n="nav_about"></a>
-          </li>
-          <li>
-            <a href="#skills" class="nav-link" data-i18n="nav_skills"></a>
-          </li>
-          <li>
-            <a href="#projects" class="nav-link" data-i18n="nav_projects"></a>
-          </li>
-          <li>
-            <a
-              href="mailto:jade.colanges@live.fr"
-              class="nav-link"
-              data-i18n="nav_contact"
-            ></a>
-          </li>
-        </ul>
-        <!-- #endregion -->
-      </div>
+            href="https://www.linkedin.com/in/jadejlc/"
+            target="_blank"
+            id="linkedin"
+          >
+            <svg width="24" height="24">
+              <use href="sprite.svg#icon-linkedin" />
+            </svg>
+          </a>
+        </div>
+        <div class="main-menu">
+          <button type="button">
+            <i data-lucide="menu"></i>
+          </button>
+          <ul>
+            <li id="menu_bio"></li>
+            <li id="menu_skills"></li>
+            <li id="menu_projects"></li>
+            <li id="menu_contact"></li>
+          </ul>
+        </div>
+      </section>
+
+      <svg width="100%" height="100%" style="color: #ebc677" aria-hidden="true">
+        <use href="sprite.svg#icon-monitor-book" />
+      </svg>
     </header>
-    <!-- #endregion -->
 
-    <main class="main-content-wrapper">
-      <!-- #region ***** A propos
-          -->
-      <section id="about" class="about-section">
-        <div class="about-text-container">
-          <div id="about-dynamic-content">
-            <!-- #region ***** Infos Dev -->
-            <div class="domain-content domain-active" data-domain-id="dev">
-              <h1 class="about-title">
-                <span class="greeting" data-i18n="about_hi"
-                  ><!-- Introduction -->
-                </span>
-                <span class="name-gradient">Jade Colanges</span>
-              </h1>
-              <p class="about-subtitle" data-i18n="dev_about_subtitle">
-                <!-- Sous-titre dev -->
-              </p>
-              <p class="about-description" data-i18n="dev_about_description">
-                <!-- Description dev -->
-              </p>
-            </div>
-            <!-- #endregion -->
-
-            <!-- #region ***** Infos Trad -->
-            <div class="domain-content" data-domain-id="translator">
-              <h1 class="about-title">
-                <span class="greeting" data-i18n="about_hi"
-                  ><!-- Introduction -->
-                </span>
-                <span class="name-gradient">Jade Colanges</span>
-              </h1>
-              <p class="about-subtitle" data-i18n="trad_about_subtitle">
-                <!-- Sous-titre traduction -->
-              </p>
-              <p class="about-description" data-i18n="trad_about_description">
-                <!-- Description traduction -->
-              </p>
-            </div>
-            <!-- #endregion -->
-
-            <!-- #region ***** Infos écriture -->
-            <div class="domain-content" data-domain-id="writer">
-              <h1 class="about-title">
-                <span class="greeting" data-i18n="about_hi">
-                  <!-- Introduction -->
-                </span>
-                <span class="name-gradient">Jade Lucy Colanges</span>
-              </h1>
-              <p class="about-subtitle" data-i18n="write_about_subtitle">
-                <!-- Sous-titre autrice -->
-              </p>
-              <p class="about-description" data-i18n="write_about_description">
-                <!-- Description autrice -->
-              </p>
-            </div>
-            <!-- #endregion -->
-          </div>
-
-          <!-- #region Boutons contact -->
-          <div class="about-cta-group">
-            <!-- Mail -->
-            <a
-              href="mailto:jade.colanges@live.fr"
-              class="cta-button primary-cta"
-              data-i18n="cta_intouch"
-            >
-            </a>
-            <!-- #region CV dev FR-->
-            <a
-              href="Jade-Colanges-dev-2026.pdf"
-              target="_blank"
-              class="cta-button secondary-cta domain-content"
-              id="bouton-cv"
-              data-domain-id="dev"
-            >
-              <span data-i18n="cta_cv"> </span>
-              <i data-lucide="external-link" class="icon-projects"></i>
-            </a>
-            <!-- #endregion -->
-            <!-- #region CV trad FR -->
-            <a
-              href="Jade-Colanges-trad-2026.pdf"
-              target="_blank"
-              class="cta-button secondary-cta domain-content"
-              id="bouton-cv"
-              data-domain-id="translator"
-            >
-              <span data-i18n="cta_cv"> </span>
-              <i data-lucide="external-link" class="icon-projects"></i>
-            </a>
-            <!-- #endregion -->
-
-            <!-- #region ***** Réseaux sociaux -->
-            <div class="social-icons">
-              <a
-                href="https://github.com/JadeJLC"
-                target="_blank"
-                class="social-icon"
-                aria-label="GitHub"
-              >
-                <i data-lucide="github" class="icon-md"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/jadejlc/"
-                target="_blank"
-                class="social-icon"
-                aria-label="LinkedIn"
-              >
-                <i data-lucide="linkedin" class="icon-md"></i>
-              </a>
-              <a
-                href="https://instagram.com/jlc.jade"
-                target="_blank"
-                class="social-icon"
-                aria-label="Instagram"
-              >
-                <i data-lucide="instagram" class="icon-md"></i>
-              </a>
-            </div>
-            <!-- #endregion -->
-          </div>
+    <section class="top-zone" id="bio">
+      <aside>
+        <img
+          src="ressources/internal-circle.png"
+          aria-hidden="true"
+          class="rotating-reverse internal-circle"
+        />
+        <img
+          src="ressources/external-circle.png"
+          aria-hidden="true"
+          class="rotating-normal external-circle"
+        />
+        <div>
+          <img src="ressources/photo.png" aria-hidden="true" class="photo" />
         </div>
-      </section>
-      <!-- #endregion -->
+      </aside>
+      <h2>
+        <span class="title"></span>
+        <div class="pro-links">
+          <!--Logo Github-->
+          <a href="https://github.com/JadeJLC" target="_blank" id="github">
+            <svg width="24" height="24">
+              <use href="sprite.svg#icon-github" />
+            </svg>
+          </a>
 
-      <!-- #region ***** Compétences -->
-      <section id="skills" class="section-padding section-divider">
-        <h2 class="section-title" id="skills-title" data-i18n="dev_skill_title">
-          <!-- Titre de l'onglet compétences -->
-        </h2>
-        <p
-          class="section-intro"
-          id="skills-intro"
-          data-i18n="dev_skill_description"
-        >
-          <!-- Description de l'onglet compétences -->
-        </p>
-
-        <div class="skills-grid" id="skills-dynamic-content">
-          <!-- #region ***** Skills dev -->
-          <div class="domain-content domain-active" data-domain-id="dev">
-            <div class="skill-card">
-              <i data-lucide="codesandbox" class="skill-icon"></i
-              ><span class="skill-name">Go</span>
-            </div>
-            <div class="skill-card">
-              <i data-lucide="code" class="skill-icon"></i
-              ><span class="skill-name">HTML</span>
-            </div>
-            <div class="skill-card">
-              <i data-lucide="brush" class="skill-icon"></i
-              ><span class="skill-name">CSS</span>
-            </div>
-            <div class="skill-card">
-              <i data-lucide="database" class="skill-icon"></i
-              ><span class="skill-name">SQL</span>
-            </div>
-            <div class="skill-card">
-              <i data-lucide="braces" class="skill-icon"></i
-              ><span class="skill-name">JavaScript</span>
-            </div>
-            <div class="skill-card">
-              <i data-lucide="book" class="skill-icon"></i
-              ><span class="skill-name">C</span>
-            </div>
-          </div>
-          <!-- #endregion -->
-
-          <!-- #region Skills traduction -->
-          <div class="domain-content" data-domain-id="translator">
-            <div class="skill-card">
-              <i data-lucide="languages" class="skill-icon"></i
-              ><span class="skill-name" data-i18n="skill_loca">
-                <!-- Localisation -->
-              </span>
-            </div>
-            <div class="skill-card">
-              <i data-lucide="file-check" class="skill-icon"></i
-              ><span class="skill-name">LQA & MTPE</span>
-            </div>
-            <div class="skill-card">
-              <i data-lucide="sigma" class="skill-icon"></i
-              ><span class="skill-name">MemoQ</span>
-            </div>
-            <div class="skill-card">
-              <i data-lucide="captions" class="skill-icon"></i
-              ><span class="skill-name">SubtitleEdit</span>
-            </div>
-            <div class="skill-card">
-              <i data-lucide="joystick" class="skill-icon"></i
-              ><span class="skill-name" data-i18n="skill_game">
-                <!-- Game Knowledge -->
-              </span>
-            </div>
-            <div class="skill-card">
-              <i data-lucide="book-key" class="skill-icon"></i
-              ><span class="skill-name" data-i18n="skill_lingui">
-                <!-- Linguistics -->
-              </span>
-            </div>
-          </div>
-          <!-- #endregion -->
-
-          <!-- #region ***** Skills écriture -->
-          <div class="domain-content" data-domain-id="writer">
-            <div class="skill-card">
-              <i data-lucide="sparkles" class="skill-icon"></i
-              ><span class="skill-name">World Building</span>
-            </div>
-            <div class="skill-card">
-              <i data-lucide="search" class="skill-icon"></i
-              ><span class="skill-name" data-i18n="skill_research">
-                <!-- Research -->
-              </span>
-            </div>
-            <div class="skill-card">
-              <i data-lucide="pen-tool" class="skill-icon"></i
-              ><span class="skill-name" data-i18n="skill_write">
-                <!-- Writing and linguistics -->
-              </span>
-            </div>
-            <div class="skill-card">
-              <i data-lucide="book-open-check" class="skill-icon"></i
-              ><span class="skill-name" data-i18n="skill_review">
-                <!-- Review -->
-              </span>
-            </div>
-            <div class="skill-card">
-              <i data-lucide="quote" class="skill-icon"></i
-              ><span class="skill-name">Dialogues</span>
-            </div>
-            <div class="skill-card">
-              <i data-lucide="brush" class="skill-icon"></i
-              ><span class="skill-name">Illustrations</span>
-            </div>
-          </div>
-          <!-- #endregion -->
+          <!-- Logo linkedin-->
+          <a
+            href="https://www.linkedin.com/in/jadejlc/"
+            target="_blank"
+            id="linkedin"
+          >
+            <svg width="24" height="24">
+              <use href="sprite.svg#icon-linkedin" />
+            </svg>
+          </a>
         </div>
-      </section>
-      <!-- #endregion -->
-
-      <!-- #region ***** Projets-->
-      <section id="projects" class="section-padding section-divider">
-        <h2 class="section-title" id="projects-title">
-          <!-- Titre projets -->
-        </h2>
-        <p class="section-intro project-intro-width" id="projects-intro">
-          <!-- Description onglet projects -->
-        </p>
-
-        <div class="projects-grid" id="projects-dynamic-content">
-          <!-- #region ***** Projets dev  -->
-          <div class="domain-content domain-active" data-domain-id="dev">
-            <!-- Project Nightmare -->
-            <article class="project-card">
-              <div class="project-header">
-                <h3 class="project-title">
-                  Project Nightmare : Deadline Invaders
-                </h3>
-                <div class="project-links">
-                  <!-- <a href="#" target="_blank" class="project-link" aria-label="GitHub Repository" data-i18n-title="link_github"><i data-lucide="github" class="icon-projects"></i></a> -->
-                  <a
-                    href="https://youtu.be/jVcbOcdRMeI"
-                    target="_blank"
-                    class="project-link"
-                    aria-label="Demo Video"
-                    data-i18n-title="link_demo"
-                    ><i data-lucide="square-play" class="icon-projects"></i
-                  ></a>
-                </div>
-              </div>
-              <p
-                class="project-description"
-                data-i18n="project_invaders_description"
-              >
-                <!-- Description du projet -->
-              </p>
-              <div class="project-tags">
-                <!-- Compétences utilisées -->
-                <span class="tag">Web design</span>
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">JavaScript</span>
-                <span class="tag">Pixel Art</span>
-              </div>
-            </article>
-
-            <!-- Hamster Care -->
-            <article class="project-card">
-              <div class="project-header">
-                <h3 class="project-title">Hamster Care</h3>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/JadeJLC/HamsterCare"
-                    target="_blank"
-                    class="project-link"
-                    aria-label="GitHub Repository"
-                    data-i18n-title="link_github"
-                    ><i data-lucide="github" class="icon-projects"></i
-                  ></a>
-                  <!-- <a href="https://dea-kademeia.forumactif.com/" target="_blank" class="project-link" aria-label="WebSite Link" data-i18n-title="link_website"><i data-lucide="monitor" class="icon-projects"></i></a> -->
-                  <a
-                    class="project-link"
-                    aria-label="WIP"
-                    data-i18n-title="link_wip"
-                    ><i data-lucide="loader-circle" class="icon-projects"></i
-                  ></a>
-                </div>
-              </div>
-              <p
-                class="project-description"
-                data-i18n="project_hamster_description"
-              >
-                <!-- Description du projet -->
-              </p>
-              <div class="project-tags">
-                <!-- Compétences utilisées -->
-                <span class="tag">Web design</span>
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">JavaScript</span>
-                <span class="tag">Pixel Art</span>
-              </div>
-            </article>
-
-            <!-- Indarë -->
-            <article class="project-card">
-              <div class="project-header">
-                <h3 class="project-title">Indarë</h3>
-                <div class="project-links">
-                  <!-- <a href="#" target="_blank" class="project-link" aria-label="GitHub Repository" data-i18n-title="link_github"><i data-lucide="github" class="icon-projects"></i></a> -->
-                  <a
-                    href="https://indare.forumactif.com/"
-                    target="_blank"
-                    class="project-link"
-                    aria-label="Website Link"
-                    data-i18n-title="link_website"
-                    ><i data-lucide="monitor" class="icon-projects"></i
-                  ></a>
-                </div>
-              </div>
-              <p
-                class="project-description"
-                data-i18n="project_inda_description"
-              >
-                <!-- Description du projet -->
-              </p>
-              <div class="project-tags">
-                <!-- Compétences utilisées -->
-                <span class="tag">Web design</span>
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">JavaScript</span>
-              </div>
-            </article>
-
-            <!-- Indarë Exams-->
-            <article class="project-card">
-              <div class="project-header">
-                <h3 class="project-title">Examens Indarë</h3>
-                <div class="project-links">
-                  <!-- <a href="#" target="_blank" class="project-link" aria-label="GitHub Repository" data-i18n-title="link_github"><i data-lucide="github" class="icon-projects"></i></a> -->
-                  <a
-                    href="https://drive.google.com/file/d/1QvsDuLSNUOB8ypyy3U3nAiRrlhIZPxKH/view?usp=sharing"
-                    target="_blank"
-                    class="project-link"
-                    aria-label="Website Link"
-                    data-i18n-title="link_website"
-                    ><i data-lucide="monitor" class="icon-projects"></i
-                  ></a>
-                </div>
-              </div>
-              <p
-                class="project-description"
-                data-i18n="project_inda_exams_description"
-              >
-                <!-- Description du projet -->
-              </p>
-              <div class="project-tags">
-                <!-- Compétences utilisées -->
-                <span class="tag">RPG Maker</span>
-                <span class="tag">Game Design</span>
-                <span class="tag">Puzzle</span>
-              </div>
-            </article>
-
-            <!-- TimeTable -->
-            <article class="project-card">
-              <div class="project-header">
-                <h3 class="project-title">TimeTable</h3>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/JadeJLC/Timetable"
-                    target="_blank"
-                    class="project-link"
-                    aria-label="GitHub Repository"
-                    data-i18n-title="link_github"
-                    ><i data-lucide="github" class="icon-projects"></i
-                  ></a>
-                  <!-- <a href="#" target="_blank" class="project-link" aria-label="Website Link" data-i18n-title="link_website" title="Accéder au site"><i data-lucide="monitor" class="icon-projects"></i></a> -->
-                </div>
-              </div>
-              <p
-                class="project-description"
-                data-i18n="project_timetable_description"
-              >
-                <!-- Description du projet -->
-              </p>
-              <div class="project-tags">
-                <!-- Compétences utilisées -->
-                <span class="tag">Web design</span>
-                <span class="tag" data-i18n="tag_server"
-                  ><!-- Server conception --></span
-                >
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">JavaScript</span>
-                <span class="tag">GO</span>
-              </div>
-            </article>
-
-            <!-- Dea Kademeia -->
-            <article class="project-card">
-              <div class="project-header">
-                <h3 class="project-title">Dea Kademeia</h3>
-                <div class="project-links">
-                  <!-- <a href="#" target="_blank" class="project-link" aria-label="GitHub Repository" data-i18n-title="link_github"><i data-lucide="github" class="icon-projects"></i></a> -->
-                  <a
-                    href="https://dea-kademeia.forumactif.com/"
-                    target="_blank"
-                    class="project-link"
-                    aria-label="Website Link"
-                    data-i18n-title="link_website"
-                    title="Accéder au site"
-                    ><i data-lucide="monitor" class="icon-projects"></i
-                  ></a>
-                </div>
-              </div>
-              <p
-                class="project-description"
-                data-i18n="project_dea_description"
-              >
-                <!-- Description du projet -->
-              </p>
-              <div class="project-tags">
-                <!-- Compétences utilisées -->
-                <span class="tag">Web design</span>
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">JavaScript</span>
-              </div>
-            </article>
-
-            <!-- We Are Miraculous -->
-            <article class="project-card">
-              <div class="project-header">
-                <h3 class="project-title">We Are Miraculous</h3>
-                <div class="project-links">
-                  <!-- <a href="#" target="_blank" class="project-link" aria-label="GitHub Repository" data-i18n-title="link_github"><i data-lucide="github" class="icon-projects"></i></a> -->
-                  <a
-                    href="https://we-are-miraculous.forumactif.com/"
-                    target="_blank"
-                    class="project-link"
-                    aria-label="Website Link"
-                    data-i18n-title="link_website"
-                    title="Accéder au site"
-                    ><i data-lucide="monitor" class="icon-projects"></i
-                  ></a>
-                </div>
-              </div>
-              <p
-                class="project-description"
-                data-i18n="project_wam_description"
-              >
-                <!-- Description du projet -->
-              </p>
-              <div class="project-tags">
-                <!-- Compétences utilisées -->
-                <span class="tag">Web design</span>
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">JavaScript</span>
-              </div>
-            </article>
-          </div>
-          <!-- #endregion -->
-
-          <!-- #region ***** Projets traduction -->
-          <div class="domain-content" data-domain-id="translator">
-            <!-- ROD -->
-            <article class="project-card">
-              <div class="project-header">
-                <h3 class="project-title">
-                  <!-- Nom du projet -->
-                  ROD
-                </h3>
-                <div class="project-links">
-                  <a
-                    href="https://www.linkedin.com/in/oresama-09a841a5/"
-                    target="_blank"
-                    class="project-link"
-                    aria-label="Project Lead"
-                    data-i18n-title="link_manager|Nicolas Matthew"
-                    ><i data-lucide="user-star" class="icon-projects"></i
-                  ></a>
-                  <a class="project-link" data-i18n-title="link_nda"
-                    ><i data-lucide="venetian-mask" class="icon-projects"></i
-                  ></a>
-                  <a
-                    class="project-link"
-                    aria-label="WIP"
-                    data-i18n-title="link_wip"
-                    ><i data-lucide="loader-circle" class="icon-projects"></i
-                  ></a>
-                  <!-- ou -->
-                  <!-- <a href="#" target="_blank" class="project-link" aria-label="Client Link" title="Client : Ubisoft"><i data-lucide="handshake" class="icon-projects"></i></a> -->
-                </div>
-              </div>
-              <p
-                class="project-description"
-                data-i18n="project_rod_description"
-              >
-                <!-- Description du projet -->*
-              </p>
-              <div class="project-tags">
-                <!-- Détails -->
-                <span class="tag">English-to-French</span>
-                <span class="tag">Keywords Studios</span>
-                <span class="tag">MemoQ</span>
-                <span class="tag" data-i18n="tag_expert"></span>
-                <span class="tag" data-i18n="tag_team"></span>
-              </div>
-            </article>
-
-            <!-- Don't bother to knock -->
-            <article class="project-card">
-              <div class="project-header">
-                <h3 class="project-title">
-                  <!-- Nom du projet -->
-                  Don't bother to knock
-                </h3>
-                <div class="project-links">
-                  <a
-                    href="https://www.linkedin.com/in/lilia-cusnir-243908316/"
-                    target="_blank"
-                    class="project-link"
-                    aria-label="Project Lead"
-                    data-i18n-title="link_manager|Lilia Cusnir"
-                    ><i data-lucide="user-star" class="icon-projects"></i
-                  ></a>
-                  <!-- <a class="project-link" data-i18n-title="link_nda"><i data-lucide="venetian-mask" class="icon-projects"></i></a> -->
-                  <!-- ou -->
-                  <a
-                    href="https://www.disneyplus.com/home"
-                    target="_blank"
-                    class="project-link"
-                    aria-label="Client Link"
-                    title="Client : Disney+"
-                    ><i data-lucide="handshake" class="icon-projects"></i
-                  ></a>
-                </div>
-              </div>
-              <p
-                class="project-description"
-                data-i18n="project_dbtk_description"
-              >
-                <!-- Description du projet -->
-              </p>
-              <div class="project-tags">
-                <!-- Détails -->
-                <span class="tag">English-to-French</span>
-                <span class="tag">WordMinds</span>
-                <span class="tag">MTPE</span>
-                <span class="tag">SubtitleEdit</span>
-                <span class="tag" data-i18n="tag_sub"></span>
-              </div>
-            </article>
-
-            <!-- Lovenest -->
-            <article class="project-card">
-              <div class="project-header">
-                <h3 class="project-title">
-                  <!-- Nom du projet -->
-                  Lovenest
-                </h3>
-                <div class="project-links">
-                  <a
-                    href="https://www.linkedin.com/in/alina-castra%C5%9Fan-50ab644b/"
-                    target="_blank"
-                    class="project-link"
-                    aria-label="Project Lead"
-                    data-i18n-title="link_manager|Alina Castraşan"
-                    ><i data-lucide="user-star" class="icon-projects"></i
-                  ></a>
-                  <!-- <a class="project-link" data-i18n-title="link_nda"><i data-lucide="venetian-mask" class="icon-projects"></i></a> -->
-                  <!-- ou -->
-                  <a
-                    href="https://www.disneyplus.com/home"
-                    target="_blank"
-                    class="project-link"
-                    aria-label="Client Link"
-                    title="Client : Amazon Prime"
-                    ><i data-lucide="handshake" class="icon-projects"></i
-                  ></a>
-                </div>
-              </div>
-              <p
-                class="project-description"
-                data-i18n="project_lnest_description"
-              >
-                <!-- Description du projet -->
-              </p>
-              <div class="project-tags">
-                <!-- Détails -->
-                <span class="tag">English-to-French</span>
-                <span class="tag">WordMinds</span>
-                <span class="tag">MTPE</span>
-                <span class="tag">SubtitleEdit</span>
-                <span class="tag" data-i18n="tag_sub"></span>
-              </div>
-            </article>
-
-            <!-- MasterChef -->
-            <article class="project-card">
-              <div class="project-header">
-                <h3 class="project-title">
-                  <!-- Nom du projet -->
-                  MasterChef
-                </h3>
-                <div class="project-links">
-                  <a
-                    href="https://www.linkedin.com/in/victor-b%C3%AEb%C3%AElici-9375b5245/"
-                    target="_blank"
-                    class="project-link"
-                    aria-label="Project Lead"
-                    data-i18n-title="link_manager|Victor Bîbîlici"
-                    ><i data-lucide="user-star" class="icon-projects"></i
-                  ></a>
-                  <!-- <a class="project-link" data-i18n-title="link_nda"><i data-lucide="venetian-mask" class="icon-projects"></i></a> -->
-                  <!-- ou -->
-                  <a
-                    href="https://www.primevideo.com/-/fr/detail/MasterChef/0IMN0DJFLDIS6JLW6GAPBIS8IS"
-                    target="_blank"
-                    class="project-link"
-                    aria-label="Client Link"
-                    title="Client : Amazon"
-                    ><i data-lucide="handshake" class="icon-projects"></i
-                  ></a>
-                </div>
-              </div>
-              <p
-                class="project-description"
-                data-i18n="project_mchef_description"
-              >
-                <!-- Description du projet -->
-              </p>
-              <div class="project-tags">
-                <!-- Détails -->
-                <span class="tag">English-to-French</span>
-                <span class="tag">WordMinds</span>
-                <span class="tag">MTPE</span>
-                <span class="tag">SubtitleEdit</span>
-                <span class="tag" data-i18n="tag_sub"></span>
-              </div>
-            </article>
-
-            <!-- Avatar -->
-            <article class="project-card">
-              <div class="project-header">
-                <h3 class="project-title">
-                  <!-- Nom du projet -->
-                  Avatar: Frontiers of Pandora
-                </h3>
-                <div class="project-links">
-                  <!-- <a href="#" target="_blank" class="project-link" aria-label="Project Lead" data-i18n-title="link_manager"><i data-lucide="user-star" class="icon-projects"></i></a> -->
-                  <!-- <a class="project-link" title="Client : NDA protected"><i data-lucide="venetian-mask" class="icon-projects"></i></a> -->
-                  <!-- ou -->
-                  <a
-                    href="https://www.ubisoft.com/fr-fr/game/avatar/frontiers-of-pandora"
-                    target="_blank"
-                    class="project-link"
-                    aria-label="Client Link"
-                    title="Client : Ubisoft"
-                    ><i data-lucide="handshake" class="icon-projects"></i
-                  ></a>
-                </div>
-              </div>
-              <p
-                class="project-description"
-                data-i18n="project_afop_description"
-              >
-                <!-- Description du projet -->
-              </p>
-              <div class="project-tags">
-                <!-- Détails -->
-                <span class="tag">English-to-French</span>
-                <span class="tag">Keywords Studios</span>
-                <span class="tag">MemoQ</span>
-                <span class="tag" data-i18n="tag_crea"></span>
-                <span class="tag" data-i18n="tag_team"></span>
-              </div>
-            </article>
-
-            <!-- Blizzard -->
-            <article class="project-card">
-              <div class="project-header">
-                <h3 class="project-title">
-                  <!-- Nom du projet -->
-                  Blizzard Out Of Game
-                </h3>
-                <div class="project-links">
-                  <a
-                    href="https://www.linkedin.com/in/sylvain-lamole-0579293/"
-                    target="_blank"
-                    class="project-link"
-                    aria-label="Project Lead"
-                    data-i18n-title="link_manager|Sylvain Lamole"
-                    ><i data-lucide="user-star" class="icon-projects"></i
-                  ></a>
-                  <!-- <a class="project-link" data-i18n-title="link_nda"><i data-lucide="venetian-mask" class="icon-projects"></i></a>-->
-                  <!-- ou -->
-                  <a
-                    href="https://www.blizzard.com/fr-fr/"
-                    target="_blank"
-                    class="project-link"
-                    aria-label="Client Link"
-                    title="Client : Blizzard"
-                    ><i data-lucide="handshake" class="icon-projects"></i
-                  ></a>
-                </div>
-              </div>
-              <p
-                class="project-description"
-                data-i18n="project_blizz_description"
-              >
-                <!-- Description du projet -->
-              </p>
-              <div class="project-tags">
-                <!-- Détails -->
-                <span class="tag">English-to-French</span>
-                <span class="tag">Keywords Studios</span>
-                <span class="tag">SubtitleEdit</span>
-                <span class="tag" data-i18n="tag_sub"></span>
-              </div>
-            </article>
-
-            <!-- JRPG -->
-            <article class="project-card">
-              <div class="project-header">
-                <h3 class="project-title">
-                  <!-- Nom du projet -->
-                  J-RPG
-                </h3>
-                <div class="project-links">
-                  <a
-                    href="https://www.linkedin.com/in/florie-ab%C3%A9lard-9147b6b4/"
-                    target="_blank"
-                    class="project-link"
-                    aria-label="Project Lead"
-                    data-i18n-title="link_manager|Florie Abélard"
-                    ><i data-lucide="user-star" class="icon-projects"></i
-                  ></a>
-                  <a class="project-link" data-i18n-title="link_nda"
-                    ><i data-lucide="venetian-mask" class="icon-projects"></i
-                  ></a>
-                  <!-- ou -->
-                  <!-- <a href="#" target="_blank" class="project-link" aria-label="Client Link" title="Client : Ubisoft"><i data-lucide="handshake" class="icon-projects"></i></a> -->
-                </div>
-              </div>
-              <p
-                class="project-description"
-                data-i18n="project_jrpg_description"
-              >
-                <!-- Description du projet -->*
-              </p>
-              <div class="project-tags">
-                <!-- Détails -->
-                <span class="tag">English-to-French</span>
-                <span class="tag">Keywords Studios</span>
-                <span class="tag">MemoQ</span>
-                <span class="tag" data-i18n="tag_search"></span>
-                <span class="tag" data-i18n="tag_crea"></span>
-              </div>
-            </article>
-
-            <!-- Bamblup -->
-            <article class="project-card">
-              <div class="project-header">
-                <h3 class="project-title">
-                  <!-- Nom du projet -->
-                  Bamblup: Motion To Win
-                </h3>
-                <div class="project-links">
-                  <a
-                    href="https://www.linkedin.com/in/leslie-alfredsson/"
-                    target="_blank"
-                    class="project-link"
-                    aria-label="Project Lead"
-                    data-i18n-title="link_manager|Leslie Alfredson"
-                    ><i data-lucide="user-star" class="icon-projects"></i
-                  ></a>
-                  <!-- <a class="project-link" data-i18n-title="link_nda"><i data-lucide="venetian-mask" class="icon-projects"></i></a> -->
-                  <!-- ou -->
-                  <!-- <a href="#" target="_blank" class="project-link" aria-label="Client Link" title="Client : Ubisoft"><i data-lucide="handshake" class="icon-projects"></i></a> -->
-                </div>
-              </div>
-              <p
-                class="project-description"
-                data-i18n="project_bamb_description"
-              >
-                <!-- Description du projet -->*
-              </p>
-              <div class="project-tags">
-                <!-- Détails -->
-                <span class="tag">English-to-French</span>
-                <span class="tag">FirstAndTen</span>
-                <span class="tag" data-i18n="tag_crea"></span>
-                <span class="tag" data-i18n="tag_team"></span>
-              </div>
-            </article>
-          </div>
-          <!-- #endregion -->
-
-          <!-- #region ***** Projets écriture -->
-          <div class="domain-content" data-domain-id="writer">
-            <!-- May'zur 1 -->
-            <article class="project-card">
-              <div class="project-header">
-                <h3 class="project-title">Les Joyaux des Titans</h3>
-                <div class="project-links">
-                  <div
-                    class="project-link book-hover"
-                    aria-label="Buy Link"
-                    title="Acheter"
-                  >
-                    <ul class="project-card">
-                      Commandez-le chez votre libraire préféré ou sur :
-                      <br />
-                      <li>
-                        <a
-                          href="https://librairie.bod.fr/les-joyaux-des-titans-jade-lucy-colanges-9782322566211"
-                          class="tag"
-                          >BoD (ebook)</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.amazon.fr/Joyaux-Titans-Jade-Lucy-Colanges/dp/2322499471"
-                          class="tag"
-                          >Amazon</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.fnac.com/a19277321/Jade-Lucy-Colanges-Les-Joyaux-des-Titans"
-                          class="tag"
-                          >Fnac</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.cultura.com/p-les-joyaux-des-titans-1-9782322499472.html"
-                          class="tag"
-                          >Cultura</a
-                        >
-                      </li>
-                    </ul>
-                    <i data-lucide="shopping-cart" class="icon-projects"></i>
-                  </div>
-                  <div
-                    target="_blank"
-                    class="project-link book-hover"
-                    aria-label="Booknode Link"
-                    title="Laisser un avis"
-                  >
-                    <ul class="project-card">
-                      Laisser un avis sur :
-                      <br />
-                      <li>
-                        <a
-                          href="https://booknode.com/les_secrets_de_mayzur_tome_1_les_joyaux_des_titans_03544026"
-                          class="tag"
-                          >Booknode</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.babelio.com/livres/Colanges-Les-Joyaux-des-Titans-1/1585719"
-                          class="tag"
-                          >Babelio</a
-                        >
-                      </li>
-                    </ul>
-                    <i data-lucide="library" class="icon-projects"></i>
-                  </div>
-                </div>
-              </div>
-              <p
-                class="project-description"
-                data-i18n="project_ljdt_description"
-              >
-                <!-- Description du projet -->
-                <center id="LJDT-book">
-                  ... <i data-lucide="book-open-text"></i> ...
-                </center>
-                <br />
-              </p>
-              <div class="project-tags">
-                <!-- Détails -->
-                <span class="tag">Fantasy</span>
-                <span class="tag">540 pages</span>
-                <span class="tag">Worldbuilding</span>
-              </div>
-            </article>
-
-            <!-- May'zur 2 -->
-            <article class="project-card">
-              <div class="project-header">
-                <h3 class="project-title">L'Éveil des Titans <br /><br /></h3>
-                <div class="project-links">
-                  <div
-                    class="project-link book-hover"
-                    aria-label="Buy Link"
-                    title="Acheter"
-                  >
-                    <ul class="project-card">
-                      Commandez-le chez votre libraire préféré ou sur :
-                      <br />
-                      <li>
-                        <a
-                          href="https://librairie.bod.fr/leveil-des-titans-jade-lucy-colanges-9782322657988"
-                          class="tag"
-                          >BoD (ebook)</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.amazon.fr/-/en/Jade-Lucy-Colanges/dp/2322498076"
-                          class="tag"
-                          >Amazon</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.fnac.com/a21099863/Jade-Lucy-Colanges-L-eveil-des-Titans"
-                          class="tag"
-                          >Fnac</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.cultura.com/p-l-eveil-des-titans-11713468.html"
-                          class="tag"
-                          >Cultura</a
-                        >
-                      </li>
-                    </ul>
-                    <i data-lucide="shopping-cart" class="icon-projects"></i>
-                  </div>
-                  <div
-                    target="_blank"
-                    class="project-link book-hover"
-                    aria-label="Booknode Link"
-                    title="Laisser un avis"
-                  >
-                    <ul class="project-card">
-                      Laisser un avis sur :
-                      <br />
-                      <li>
-                        <a
-                          href="https://booknode.com/les_secrets_de_mayzur_tome_2_leveil_des_titans_03613747"
-                          class="tag"
-                          >Booknode</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.babelio.com/livres/Colanges-Leveil-des-Titans/1925374"
-                          class="tag"
-                          >Babelio</a
-                        >
-                      </li>
-                    </ul>
-                    <i data-lucide="library" class="icon-projects"></i>
-                  </div>
-                </div>
-              </div>
-              <p
-                class="project-description"
-                data-i18n="project_ledt_description"
-              >
-                <!-- Description du projet -->
-                <b>Les Secrets de May'zur - T2</b>
-                <br /><br />
-                La cité souterraine de Zephdon n'a laissé personne indemne.
-                Kinn'yah se débat entre angoisses et mauvais souvenirs tandis
-                que Karel est envahi de nouvelles questions. Partagé entre des
-                pouvoirs de plus en plus difficiles à contrôler et des
-                sentiments impossibles à envisager, il prend la route du Sud au
-                côté de la princesse.
-                <br /><br />L'avenir est fait de sacrifices, encore faut-il
-                pouvoir y consentir...
-                <center id="LEDT-book">
-                  ... <i data-lucide="book-open-text"></i> ...
-                </center>
-                <br />
-              </p>
-              <div class="project-tags">
-                <!-- Détails -->
-                <span class="tag">Fantasy</span>
-                <span class="tag">556 pages</span>
-                <span class="tag">Worldbuilding</span>
-              </div>
-            </article>
-          </div>
-          <!-- #endregion -->
+        <div>
+          <span class="level"></span> -
+          <span class="spec"></span>
         </div>
-      </section>
-      <!-- #endregion -->
+      </h2>
+      <main>
+        <div>
+          <span class="ways"></span>
+          <span class="rotation"></span>
+        </div>
+      </main>
+    </section>
 
-      <!-- #region ***** Email -->
-      <section
-        id="contact"
-        class="section-padding section-divider contact-section"
-      >
-        <h2 class="section-title">
-          <!-- Titre contact -->
-        </h2>
-        <p class="contact-intro">
-          <!-- Intro contact -->
-        </p>
-        <!-- Bouton email -->
+    <blockquote class="main-quote">
+      <span class="quote-mark" aria-hidden="true">❝</span>
+      <p>
+        L’art seul peut s’accorder le privilège d’affirmer les tourments et les
+        joies du cœur. Par nature implicite, il est la plus discrète et la plus
+        belle des manières de faire virevolter les sentiments.
+      </p>
+      <div><span></span>— La Reine aux Papillons</div>
+    </blockquote>
+
+    <section class="tabs">
+      <button type="button" id="dev">
         <a
-          href="mailto:jade.colanges@live.fr"
-          class="cta-button primary-cta final-cta"
+          href="../Jade-Colanges-dev-2026.pdf"
+          target="_blank"
+          class="download-link"
         >
-          <span data-i18n="cta_email"></span>
-          <i data-lucide="mail" class="icon-md icon-mail"></i>
+          <i data-lucide="file-user"></i>
         </a>
+        <span class="tab-title"></span>
+        <div>
+          <i data-lucide="code"></i>
+          <div>
+            <span class="name"></span>
+            <span class="subtitle"></span>
+          </div>
+        </div>
+        <footer></footer>
+      </button>
+      <button type="button" id="trad">
+        <a
+          href="../Jade-Colanges-trad-2026.pdf"
+          target="_blank"
+          class="download-link"
+        >
+          <i data-lucide="file-user"></i>
+        </a>
+        <span class="tab-title"></span>
+        <div>
+          <i data-lucide="languages"></i>
+          <div>
+            <span class="name"></span>
+            <span class="subtitle"></span>
+          </div>
+        </div>
+        <footer></footer>
+      </button>
+      <button type="button" id="writer">
+        <a
+          href="https://instagram.com/jlc.jade"
+          target="_blank"
+          class="social-icon download-link"
+          aria-label="Instagram"
+        >
+          <svg width="24" height="24">
+            <use href="sprite.svg#icon-instagram" />
+          </svg>
+        </a>
+        <span class="tab-title"></span>
+        <div>
+          <i data-lucide="book-open-text"></i>
+          <div>
+            <span class="name"></span>
+            <span class="subtitle"></span>
+          </div>
+        </div>
+        <footer></footer>
+      </button>
+    </section>
+
+    <main class="domain-block">
+      <section class="skill-galaxy" id="skills">
+        <h2>Compétences</h2>
+        <div class="galaxy-center"></div>
+        <svg
+          class="galaxy-links"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        ></svg>
+        <div class="galaxy-nodes"></div>
       </section>
-      <!-- #endregion -->
+      <section class="project-zone" id="projects">
+        <h2>Projets</h2>
+      </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="main-footer">
-      <div class="footer-content">
-        <p class="copyright">&copy; 2025 Jade Colanges. All rights reserved.</p>
-        <div class="footer-social-links">
-          <a
-            href="https://instagram.com/jlc.jade"
-            target="_blank"
-            class="social-icon"
-            aria-label="Instagram"
-          >
-            <i data-lucide="instagram" class="icon-md"></i>
-          </a>
-          <a
-            href="https://www.pinterest.com/jadelucycolanges"
-            target="_blank"
-            class="footer-social-icon"
-            aria-label="Pinterest"
-          >
-            <i data-lucide="brush" class="icon-projects"></i>
-          </a>
-          <a
-            href="mailto:jade.colanges@live.fr"
-            class="footer-social-icon"
-            aria-label="Email"
-          >
-            <i data-lucide="at-sign" class="icon-projects"></i>
-          </a>
-        </div>
+    <footer class="main-footer" id="contact">
+      <div class="contact-info">
+        <button type="button">Email</button>
+      </div>
+      <p>© 2026 Jade Colanges. Portfolio.</p>
+      <div>
+        <a
+          href="https://instagram.com/jlc.jade"
+          target="_blank"
+          class="social-icon"
+          aria-label="Instagram"
+        >
+          <svg width="24" height="24">
+            <use href="sprite.svg#icon-instagram" />
+          </svg>
+        </a>
+        <a
+          href="https://www.pinterest.com/jadelucycolanges"
+          target="_blank"
+          class="footer-social-icon"
+          aria-label="Pinterest"
+        >
+          <i data-lucide="brush"></i>
+        </a>
+        <a
+          href="mailto:jade.colanges@live.fr"
+          class="footer-social-icon"
+          aria-label="Email"
+          ><i data-lucide="mail"></i>
+        </a>
       </div>
     </footer>
-
-    <script src="script.js"></script>
+    <script type="module" src="app.js"></script>
   </body>
 </html>

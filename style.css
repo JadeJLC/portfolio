@@ -815,6 +815,7 @@ ul {
   border-radius: 5px;
   color: var(--color-golden);
   transition: transform 0.2s ease;
+  background-color: var(--color-accent);
 }
 
 .project-link > a {

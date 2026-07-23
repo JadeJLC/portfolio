@@ -299,12 +299,13 @@ header h1 span {
   cursor: pointer;
 }
 
-.contact-info button {
-  display: flex;
+.contact-info button a {
+  display: flex !important;
   align-items: center;
   gap: 5px;
   min-width: 195px;
   justify-content: center;
+  color: inherit;
 }
 
 .main-buttons div button:has(svg) {

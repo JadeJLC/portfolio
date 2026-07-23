@@ -1251,7 +1251,8 @@ ul {
   header h1 span,
   .contact-info button span,
   .main-quote,
-  header > svg {
+  header > svg,
+  .top-zone aside {
     display: none;
   }
 

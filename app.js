@@ -333,7 +333,7 @@ function createProjectElement(project, screenshots) {
        ${getIcon(link.title)}
        </div>`;
      } else {
-       return `<a title="${link.title}" 
+       return `<a title="${link.title}" target="_blank"
      ${link.href ? `href="${link.href}"` : ""}>
      ${link.hover ? link.hover : ""}
       ${getIcon(link.title)}

@@ -257,6 +257,12 @@ header h1 span {
   z-index: 2;
 }
 
+.main-buttons div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .main-buttons div,
 .pro-links,
 .contact-info {
@@ -282,7 +288,8 @@ header h1 span {
 .main-buttons div button:hover,
 .main-buttons div a:hover,
 .pro-links a:hover,
-.contact-info:hover button {
+.contact-info:hover button,
+.contact-info:hover svg {
   color: var(--color-golden);
 }
 
@@ -306,6 +313,7 @@ header h1 span {
   min-width: 195px;
   justify-content: center;
   color: inherit;
+  font-size: inherit;
 }
 
 .main-buttons div button:has(svg) {

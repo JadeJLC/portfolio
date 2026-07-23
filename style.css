@@ -869,7 +869,6 @@ ul {
   font-size: 0.6em;
   font-family: var(--font-soft);
   flex-shrink: 0;
-  padding-bottom: 2px;
 }
 
 .multi-link,

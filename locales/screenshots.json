@@ -1,17 +1,17 @@
 {
   "write_01": [
-    "./screenshot_writer/write_01/maquette.png",
     "./screenshot_writer/write_01/Kadkam.png",
     "./screenshot_writer/write_01/Kaelia.png",
     "./screenshot_writer/write_01/Karel.png",
     "./screenshot_writer/write_01/Kinn'yah.png",
-    "./screenshot_writer/write_01/Leehiel.png"
+    "./screenshot_writer/write_01/Leehiel.png",
+    "./screenshot_writer/write_01/maquette.png"
   ],
   "write_02": [
-    "./screenshot_writer/write_02/Maquette.png",
     "./screenshot_writer/write_02/Karel.png",
     "./screenshot_writer/write_02/Kinn'yah.png",
     "./screenshot_writer/write_02/Lyu.png",
+    "./screenshot_writer/write_02/Maquette.png",
     "./screenshot_writer/write_02/Nao.png"
   ],
   "dev_01": [
@@ -29,7 +29,6 @@
   ],
   "dev_02": [
     "./screenshots_dev/dev_02/accueil.png",
-    "./screenshots_dev/dev_02/available.png",
     "./screenshots_dev/dev_02/form.png",
     "./screenshots_dev/dev_02/terminal.png"
   ],
@@ -48,15 +47,18 @@
     "./screenshots_dev/dev_05/connexion.png",
     "./screenshots_dev/dev_05/home.png",
     "./screenshots_dev/dev_05/membres.png",
-    "./screenshots_dev/dev_05/mp.png",
     "./screenshots_dev/dev_05/profil.png"
   ],
-  "dev_06": ["./screenshots_dev/dev_06/test.png"],
+  "dev_06": [
+    "./screenshots_dev/dev_06/test.png"
+  ],
   "dev_07": [
     "./screenshots_dev/dev_07/graph_01.png",
     "./screenshots_dev/dev_07/graph_02.png",
     "./screenshots_dev/dev_07/perso.png",
     "./screenshots_dev/dev_07/skills.png"
   ],
-  "dev_08": ["./screenshots_dev/dev_08/page.png"]
+  "dev_08": [
+    "./screenshots_dev/dev_08/page.png"
+  ]
 }

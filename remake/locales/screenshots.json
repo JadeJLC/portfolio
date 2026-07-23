@@ -1,0 +1,62 @@
+{
+  "write_01": [
+    "./screenshot_writer/write_01/maquette.png",
+    "./screenshot_writer/write_01/Kadkam.png",
+    "./screenshot_writer/write_01/Kaelia.png",
+    "./screenshot_writer/write_01/Karel.png",
+    "./screenshot_writer/write_01/Kinn'yah.png",
+    "./screenshot_writer/write_01/Leehiel.png"
+  ],
+  "write_02": [
+    "./screenshot_writer/write_02/Maquette.png",
+    "./screenshot_writer/write_02/Karel.png",
+    "./screenshot_writer/write_02/Kinn'yah.png",
+    "./screenshot_writer/write_02/Lyu.png",
+    "./screenshot_writer/write_02/Nao.png"
+  ],
+  "dev_01": [
+    "./screenshots_dev/dev_01/dea_groups.png",
+    "./screenshots_dev/dev_01/dea_guide.png",
+    "./screenshots_dev/dev_01/dea_mbr.png",
+    "./screenshots_dev/dev_01/dea_post.png",
+    "./screenshots_dev/dev_01/dea_profile.png",
+    "./screenshots_dev/dev_01/inda_mbr.png",
+    "./screenshots_dev/dev_01/inda_nav.png",
+    "./screenshots_dev/dev_01/inda_pa.png",
+    "./screenshots_dev/dev_01/inda_profile.png",
+    "./screenshots_dev/dev_01/wam_nav.png",
+    "./screenshots_dev/dev_01/wam_pa.png"
+  ],
+  "dev_02": [
+    "./screenshots_dev/dev_02/accueil.png",
+    "./screenshots_dev/dev_02/available.png",
+    "./screenshots_dev/dev_02/form.png",
+    "./screenshots_dev/dev_02/terminal.png"
+  ],
+  "dev_03": [
+    "./screenshots_dev/dev_03/interface.png",
+    "./screenshots_dev/dev_03/roue.png",
+    "./screenshots_dev/dev_03/zoom.png"
+  ],
+  "dev_04": [
+    "./screenshots_dev/dev_04/cutscene.png",
+    "./screenshots_dev/dev_04/niveau.png",
+    "./screenshots_dev/dev_04/powerup.png",
+    "./screenshots_dev/dev_04/team.png"
+  ],
+  "dev_05": [
+    "./screenshots_dev/dev_05/connexion.png",
+    "./screenshots_dev/dev_05/home.png",
+    "./screenshots_dev/dev_05/membres.png",
+    "./screenshots_dev/dev_05/mp.png",
+    "./screenshots_dev/dev_05/profil.png"
+  ],
+  "dev_06": ["./screenshots_dev/dev_06/test.png"],
+  "dev_07": [
+    "./screenshots_dev/dev_07/graph_01.png",
+    "./screenshots_dev/dev_07/graph_02.png",
+    "./screenshots_dev/dev_07/perso.png",
+    "./screenshots_dev/dev_07/skills.png"
+  ],
+  "dev_08": ["./screenshots_dev/dev_08/page.png"]
+}

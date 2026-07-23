@@ -68,23 +68,24 @@ function calculateLevel(startDate) {
 }
 
 function startImageRotation(intervalSeconds = 3) {
-  const container = document.querySelector(".rotating-images");
-  if (!container) return;
+  const containers = document.querySelectorAll(".rotating-images");
 
-  const images = container.querySelectorAll(".slide-img");
-  let currentIndex = 0;
+  containers.forEach((container) => {
+    const images = container.querySelectorAll(".slide-img");
+    let currentIndex = 0;
 
-  setInterval(() => {
-    if (images.length <= 1) return;
+    setInterval(() => {
+      if (images.length <= 1) return;
 
-    if (currentIndex < images.length - 1) {
-      images[currentIndex].classList.add("slide-out");
-      currentIndex++;
-    } else {
-      images.forEach((img) => img.classList.remove("slide-out"));
-      currentIndex = 0;
-    }
-  }, intervalSeconds * 1000);
+      if (currentIndex < images.length - 1) {
+        images[currentIndex].classList.add("slide-out");
+        currentIndex++;
+      } else {
+        images.forEach((img) => img.classList.remove("slide-out"));
+        currentIndex = 0;
+      }
+    }, intervalSeconds * 1000);
+  });
 }
 
 function getIcon(title) {

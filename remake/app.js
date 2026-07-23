@@ -136,12 +136,14 @@ async function switchDomain(dom) {
     galaxy.classList.add("hidden");
 
     const domainBlock = document.querySelector(".domain-block");
-    console.log(domainBlock);
+
     domainBlock.classList.add("faded");
-    console.log(domainBlock);
+
+    const response = await fetch(`locales/screenshots.json`);
+    const screenshots = await response.json();
 
     setTimeout(() => {
-      fillProjectsData(projectData, domain);
+      fillProjectsData(projectData, domain, screenshots);
       fillSkillGalaxy(
         skillData,
         domain,
@@ -150,7 +152,7 @@ async function switchDomain(dom) {
       equalizeProjectCards();
       lucide.createIcons();
       domainBlock.classList.remove("faded");
-      console.log(domainBlock);
+
       galaxy.classList.remove("hidden");
     }, 200);
   } catch (error) {
@@ -286,7 +288,7 @@ function fillTabData(tab, data) {
   if (downloadLink && data.cv) downloadLink.href = data.cv;
 }
 
-function fillProjectsData(projectList, domain) {
+function fillProjectsData(projectList, domain, screenshots) {
   const projectZone = document.querySelector(".project-zone");
   projectZone.classList.remove("trad", "dev", "writer");
   projectZone.classList.add(domain);
@@ -295,24 +297,25 @@ function fillProjectsData(projectList, domain) {
   projectList = projectList.reverse();
 
   projectList.forEach((project) => {
-    const htmlBloc = createProjectElement(project);
+    const htmlBloc = createProjectElement(project, screenshots);
     projectZone.appendChild(htmlBloc);
   });
 
   startImageRotation(3);
 }
 
-function createProjectElement(project) {
+function createProjectElement(project, screenshots) {
   const container = document.createElement("article");
   container.id = project.id;
   container.classList.add("project-element");
+
   container.innerHTML = `
   ${
-    project.screenshots.length > 0
+    screenshots[project.id] && screenshots[project.id].length > 0
       ? `<div class="rotating-images">
-          ${project.screenshots
+          ${screenshots[project.id]
             .map((screenshot, index) => {
-              return `<img src="${screenshot}" class="slide-img" style="z-index: ${project.screenshots.length - index};" />`;
+              return `<img src="${screenshot}" class="slide-img" style="z-index: ${screenshots[project.id].length - index};" />`;
             })
             .join("")}
         </div>`

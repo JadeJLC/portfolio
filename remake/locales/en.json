@@ -51,7 +51,7 @@
   },
   "dev_projects": [
     {
-      "id": "project_01",
+      "id": "dev_01",
       "name": "Role-Playing forums",
       "description": "Role-Playing forums designed on the Forumactif platform, with an Invision framework.<br/>The main forum structure is part of the platform I personalized it with HTML, CSS and a JavaScript based on mock-ups.",
       "tags": ["front-end", "web", "community"],
@@ -73,7 +73,7 @@
       ]
     },
     {
-      "id": "project_02",
+      "id": "dev_02",
       "name": "Timetable",
       "description": "Small Go app to generate a timetable. Enter your workable hours, the total number of hours you have to work this week, and the program will distribute them evenly between your work days. Also exists in a web-server version.",
       "tags": ["back-end", "small-scale", "organisation"],
@@ -91,7 +91,7 @@
       ]
     },
     {
-      "id": "project_03",
+      "id": "dev_03",
       "name": "HamsterCare",
       "description": "A javascript web app inspired by Tamagotchis and pet care games. Take care of a pixel-art hamster and keep it alive as long as possible.<br/>Needs include food, water, sleep, physical activity, cleanliness and fun, and impact each other.",
       "tags": ["front-end", "algorithm", "game"],
@@ -108,7 +108,7 @@
       ]
     },
     {
-      "id": "project_04",
+      "id": "dev_04",
       "name": "Project Nightmare : Deadline Invaders",
       "description": "A web game inspired by Space Invaders. An annoying coworker has joined your team. They claim every success on their work and every failure on you. Finish projects without letting him sabotage them and get the recognition you and your other coworkers deserve for your work.",
       "tags": ["front-end", "back-end", "game"],
@@ -130,7 +130,7 @@
       ]
     },
     {
-      "id": "project_05",
+      "id": "dev_05",
       "name": "Project Nightmare : Discord in the Office",
       "description": "Forum app in Go and JavaScript. The app combines classic forum functionnalities and a real-time private message system, in the humoristic setting of Project Nightmare.",
       "tags": ["front-end", "back-end", "communauté"],
@@ -144,7 +144,7 @@
       ]
     },
     {
-      "id": "project_06",
+      "id": "dev_06",
       "name": "Crossword",
       "description": "Program that automatically solves empty crossword grids from a list of words. The algorithm uses backtracking to explore all possible combinations and guarantee a unique solution.",
       "tags": ["back-end", "algorithmique"],
@@ -158,7 +158,21 @@
       ]
     },
     {
-      "id": "project_07",
+      "id": "dev_07",
+      "name": "GraphQL",
+      "description": "Dashboard parsing GraphQL data from my school's (Zone01) platform, after authentication. Gets class and projects data and creates SVG graphs.",
+      "tags": ["back-end", "front-end"],
+      "tech_skills": ["JavaScript", "GraphQL", "HTML", "CSS"],
+      "screenshots": [],
+      "links": [
+        {
+          "title": "Github public",
+          "href": "https://github.com/JadeJLC/graphql"
+        }
+      ]
+    },
+    {
+      "id": "dev_08",
       "name": "Puppet",
       "description": "Puppet is a mini framework made to easily manupulate DOM and reduce manual HTML coding. It handles: <br/>- Creating and updating DOM elements <br/>- Real-time update of the display<br/>- Planning multiple routes in /#/ for SPAs <br/>- Events",
       "tags": ["back-end", "framework", "puppet"],

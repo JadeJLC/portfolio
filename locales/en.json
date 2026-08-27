@@ -54,8 +54,16 @@
       "id": "dev_01",
       "name": "Role-Playing forums",
       "description": "Role-Playing forums designed on the Forumactif platform, with an Invision framework.<br/>The main forum structure is part of the platform I personalized it with HTML, CSS and a JavaScript based on mock-ups.",
-      "tags": ["front-end", "web", "community"],
-      "tech_skills": ["HTML", "CSS", "JavaScript"],
+      "tags": [
+        "front-end",
+        "web",
+        "community"
+      ],
+      "tech_skills": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
       "screenshots": [],
       "links": [
         {
@@ -76,8 +84,14 @@
       "id": "dev_02",
       "name": "Timetable",
       "description": "Small Go app to generate a timetable. Enter your workable hours, the total number of hours you have to work this week, and the program will distribute them evenly between your work days. Also exists in a web-server version.",
-      "tags": ["back-end", "small-scale", "organisation"],
-      "tech_skills": ["Go"],
+      "tags": [
+        "back-end",
+        "small-scale",
+        "organisation"
+      ],
+      "tech_skills": [
+        "Go"
+      ],
       "screenshots": [],
       "links": [
         {
@@ -94,8 +108,17 @@
       "id": "dev_03",
       "name": "HamsterCare",
       "description": "A javascript web app inspired by Tamagotchis and pet care games. Take care of a pixel-art hamster and keep it alive as long as possible.<br/>Needs include food, water, sleep, physical activity, cleanliness and fun, and impact each other.",
-      "tags": ["front-end", "algorithm", "game"],
-      "tech_skills": ["JavaScript", "Pixel Art", "HTML", "CSS"],
+      "tags": [
+        "front-end",
+        "algorithm",
+        "game"
+      ],
+      "tech_skills": [
+        "JavaScript",
+        "Pixel Art",
+        "HTML",
+        "CSS"
+      ],
       "screenshots": [],
       "links": [
         {
@@ -111,8 +134,16 @@
       "id": "dev_04",
       "name": "Project Nightmare : Deadline Invaders",
       "description": "A web game inspired by Space Invaders. An annoying coworker has joined your team. They claim every success on their work and every failure on you. Finish projects without letting him sabotage them and get the recognition you and your other coworkers deserve for your work.",
-      "tags": ["front-end", "back-end", "game"],
-      "tech_skills": ["JavaScript", "Pixel Art", "HTML"],
+      "tags": [
+        "front-end",
+        "back-end",
+        "game"
+      ],
+      "tech_skills": [
+        "JavaScript",
+        "Pixel Art",
+        "HTML"
+      ],
       "screenshots": [],
       "links": [
         {
@@ -133,8 +164,17 @@
       "id": "dev_05",
       "name": "Project Nightmare : Discord in the Office",
       "description": "Forum app in Go and JavaScript. The app combines classic forum functionnalities and a real-time private message system, in the humoristic setting of Project Nightmare.",
-      "tags": ["front-end", "back-end", "communauté"],
-      "tech_skills": ["JavaScript", "HTML", "CSS", "Go"],
+      "tags": [
+        "front-end",
+        "back-end",
+        "communauté"
+      ],
+      "tech_skills": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Go"
+      ],
       "screenshots": [],
       "links": [
         {
@@ -147,8 +187,13 @@
       "id": "dev_06",
       "name": "Crossword",
       "description": "Program that automatically solves empty crossword grids from a list of words. The algorithm uses backtracking to explore all possible combinations and guarantee a unique solution.",
-      "tags": ["back-end", "algorithmique"],
-      "tech_skills": ["JavaScript"],
+      "tags": [
+        "back-end",
+        "algorithmique"
+      ],
+      "tech_skills": [
+        "JavaScript"
+      ],
       "screenshots": [],
       "links": [
         {
@@ -161,8 +206,16 @@
       "id": "dev_07",
       "name": "GraphQL",
       "description": "Dashboard parsing GraphQL data from my school's (Zone01) platform, after authentication. Gets class and projects data and creates SVG graphs.",
-      "tags": ["back-end", "front-end"],
-      "tech_skills": ["JavaScript", "GraphQL", "HTML", "CSS"],
+      "tags": [
+        "back-end",
+        "front-end"
+      ],
+      "tech_skills": [
+        "JavaScript",
+        "GraphQL",
+        "HTML",
+        "CSS"
+      ],
       "screenshots": [],
       "links": [
         {
@@ -175,8 +228,16 @@
       "id": "dev_08",
       "name": "Puppet",
       "description": "Puppet is a mini framework made to easily manupulate DOM and reduce manual HTML coding. It handles: <br/>- Creating and updating DOM elements <br/>- Real-time update of the display<br/>- Planning multiple routes in /#/ for SPAs <br/>- Events",
-      "tags": ["back-end", "framework", "puppet"],
-      "tech_skills": ["JavaScript", "HTML", "CSS"],
+      "tags": [
+        "back-end",
+        "framework",
+        "puppet"
+      ],
+      "tech_skills": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
       "screenshots": [],
       "links": [
         {
@@ -195,8 +256,14 @@
       "id": "trad_01",
       "name": "Bamblup: Motion To Win",
       "description": "As part of an internship in Sweden, I worked with FirstAndTen on their game Bamblup: Motion To Win. My role involved writing the lore, dialogues and interface in English then translating them into French. I was also part of the brainstorming on new ideas for game element.",
-      "tags": ["FirstAndTen", "creativity"],
-      "tech_skills": ["English → French", "Teamwork"],
+      "tags": [
+        "FirstAndTen",
+        "creativity"
+      ],
+      "tech_skills": [
+        "English → French",
+        "Teamwork"
+      ],
       "screenshots": [],
       "links": [
         {
@@ -209,8 +276,15 @@
       "id": "trad_02",
       "name": "J-RPG",
       "description": "Full translation and localization of a J-RPG, roughly 300k words of dialogue, quest descriptions, creative names (skills, creatures, places) and interface. The game was a sequel to several others, meaning consistency was a very important part of my job on the project.",
-      "tags": ["Keywords Studios", "creativity", "research"],
-      "tech_skills": ["English → French", "MemoQ"],
+      "tags": [
+        "Keywords Studios",
+        "creativity",
+        "research"
+      ],
+      "tech_skills": [
+        "English → French",
+        "MemoQ"
+      ],
       "screenshots": [],
       "links": [
         {
@@ -226,8 +300,14 @@
       "id": "trad_03",
       "name": "Blizzard Out Of Game",
       "description": "Subtitles of a promotional video interview for an HearthStone extension. Other jobs for the same client and same project manager included several out-of-game elements, like update overview and announcements.",
-      "tags": ["Keywords Studios", "subtitling"],
-      "tech_skills": ["SubtitleEdit", "English → French"],
+      "tags": [
+        "Keywords Studios",
+        "subtitling"
+      ],
+      "tech_skills": [
+        "SubtitleEdit",
+        "English → French"
+      ],
       "screenshots": [],
       "links": [
         {
@@ -244,8 +324,15 @@
       "id": "trad_04",
       "name": "Avatar: Frontiers of Pandora",
       "description": "Translation and localization of 60k words of scripts, dialogue and menus for the open-world RPG Avatar: Frontiers of Pandora (Ubisoft). I was part of a six-person localization and review team.<br/>We also translated game lore and found original French names for new plants and creatures.",
-      "tags": ["Keywords Studios", "creativity"],
-      "tech_skills": ["MemoQ", "English → French", "Teamwork"],
+      "tags": [
+        "Keywords Studios",
+        "creativity"
+      ],
+      "tech_skills": [
+        "MemoQ",
+        "English → French",
+        "Teamwork"
+      ],
       "screenshots": [],
       "links": [
         {
@@ -258,8 +345,15 @@
       "id": "trad_05",
       "name": "MasterChef",
       "description": "MTPE subtitles for 4 episodes of MasterChef on Amazon Prime. Most of the job included correcting mistranslations and missing context, as well as making the French version more idiomatic.",
-      "tags": ["WordMinds", "subtitling"],
-      "tech_skills": ["SubtitleEdit", "English → French", "MTPE"],
+      "tags": [
+        "WordMinds",
+        "subtitling"
+      ],
+      "tech_skills": [
+        "SubtitleEdit",
+        "English → French",
+        "MTPE"
+      ],
       "screenshots": [],
       "links": [
         {
@@ -276,8 +370,15 @@
       "id": "trad_06",
       "name": "Lovenest",
       "description": "MTPE subtitles for the film LoveNest on Disney+. The job involved correcting character names, translating song lyrics and avoiding multiple repetitions of common words, as well as making the French version more fluid.",
-      "tags": ["WordMinds", "subtitling"],
-      "tech_skills": ["SubtitleEdit", "English → French", "MTPE"],
+      "tags": [
+        "WordMinds",
+        "subtitling"
+      ],
+      "tech_skills": [
+        "SubtitleEdit",
+        "English → French",
+        "MTPE"
+      ],
       "screenshots": [],
       "links": [
         {
@@ -294,8 +395,15 @@
       "id": "trad_07",
       "name": "Don't bother to knock",
       "description": "MTPE subtitles for the film Don't bother to Knock on Disney+. Most of the job involved fixing mistakes in places and character names, ensuring a fluid and consistent French version and avoiding weird-sounding associations of words and sentences.",
-      "tags": ["WordMinds", "subtitling"],
-      "tech_skills": ["SubtitleEdit", "English → French", "MTPE"],
+      "tags": [
+        "WordMinds",
+        "subtitling"
+      ],
+      "tech_skills": [
+        "SubtitleEdit",
+        "English → French",
+        "MTPE"
+      ],
       "screenshots": [],
       "links": [
         {
@@ -312,8 +420,15 @@
       "id": "trad_08",
       "name": "Sword Art Online: Echoes of Aincrad",
       "description": "J-RPG out on July 10th 2026. Being very familiar with the game series, I shared a lot of my information for the Term Base and translation memory to facilitate advancement in the project.",
-      "tags": ["Keywords Studios", "game expertise"],
-      "tech_skills": ["English → French", "MemoQ", "Teamwork"],
+      "tags": [
+        "Keywords Studios",
+        "game expertise"
+      ],
+      "tech_skills": [
+        "English → French",
+        "MemoQ",
+        "Teamwork"
+      ],
       "screenshots": [],
       "links": [
         {
@@ -332,8 +447,16 @@
       "id": "write_02",
       "name": "L'éveil' des Titans",
       "description": "<strong>Les Secrets de May'zur - T2</strong>L'Éveil des Titans is currently not available in English. Interested in translation rights? Send me and email! <center>... <i data-lucide=\"at-sign\"></i> ...</center>",
-      "tags": ["Fantasy", "High Fantasy", "556 pages"],
-      "tech_skills": ["Creative writing", "Worldbuilding", "Self-publishing"],
+      "tags": [
+        "Fantasy",
+        "High Fantasy",
+        "556 pages"
+      ],
+      "tech_skills": [
+        "Creative writing",
+        "Worldbuilding",
+        "Self-publishing"
+      ],
       "screenshots": [],
       "links": [
         {
@@ -346,8 +469,16 @@
       "id": "write_01",
       "name": "Les Joyaux des Titans",
       "description": "<strong>Les Secrets de May'zur - T1</strong>L'Éveil des Titans is currently not available in English. Interested in translation rights? Send me and email! <center>... <i data-lucide=\"at-sign\"></i> ...</center>",
-      "tags": ["Fantasy", "High Fantasy", "540 pages"],
-      "tech_skills": ["Creative writing", "Worldbuilding", "Self-publishing"],
+      "tags": [
+        "Fantasy",
+        "High Fantasy",
+        "540 pages"
+      ],
+      "tech_skills": [
+        "Creative writing",
+        "Worldbuilding",
+        "Self-publishing"
+      ],
       "screenshots": [],
       "links": [
         {
@@ -476,6 +607,22 @@
       "position": {
         "x": 78.65,
         "y": 31.21
+      }
+    },
+    {
+      "type": "framework",
+      "name": "Vue.js",
+      "position": {
+        "x": 66.56,
+        "y": 7.47
+      }
+    },
+    {
+      "type": "framework",
+      "name": "Next.js",
+      "position": {
+        "x": 78.44,
+        "y": 87.42
       }
     }
   ],

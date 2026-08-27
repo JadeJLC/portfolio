@@ -54,8 +54,16 @@
       "id": "dev_01",
       "name": "Forums de rp / jdr",
       "description": "Forums de jeu de rôle conçus sur la plateforme Forumactif, version Invision. <br/> La structure principale de chaque forum est fournie par la plateforme. Je l'ai personnalisée avec du HTML, du CSS et quelques scripts à partir de maquettes de design.",
-      "tags": ["front-end", "web", "communauté"],
-      "tech_skills": ["HTML", "CSS", "JavaScript"],
+      "tags": [
+        "front-end",
+        "web",
+        "communauté"
+      ],
+      "tech_skills": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
       "links": [
         {
           "title": "Indarë",
@@ -75,8 +83,14 @@
       "id": "dev_02",
       "name": "Timetable",
       "description": "Petite appli Go pour générer un emploi du temps. Entrez vos horaires de disponibilité, le nombre total d'heures à effectuer dans la semaine, et le programme les placera équitablement entre vos jours de travail. Existe aussi en version serveur web.",
-      "tags": ["back-end", "small-scale", "organisation"],
-      "tech_skills": ["Go"],
+      "tags": [
+        "back-end",
+        "small-scale",
+        "organisation"
+      ],
+      "tech_skills": [
+        "Go"
+      ],
       "links": [
         {
           "title": "Github - Appli terminal",
@@ -92,8 +106,17 @@
       "id": "dev_03",
       "name": "HamsterCare",
       "description": "Appli web en javascript inspirée des Tamagotchis et des jeux de soin d'animaux. Occupez-vous d'un hamster en pixel art et gardez-le en vie aussi longtemps que possible. <br/> Ses besoins comprennent la nourriture, l'eau, le sommeil, l'activité physique, la propreté et l'amusement, et s'impactent les uns les autres.",
-      "tags": ["front-end", "algorithmique", "jeu vidéo"],
-      "tech_skills": ["JavaScript", "Pixel Art", "HTML", "CSS"],
+      "tags": [
+        "front-end",
+        "algorithmique",
+        "jeu vidéo"
+      ],
+      "tech_skills": [
+        "JavaScript",
+        "Pixel Art",
+        "HTML",
+        "CSS"
+      ],
       "links": [
         {
           "title": "Github public",
@@ -108,8 +131,16 @@
       "id": "dev_04",
       "name": "Project Nightmare : Deadline Invaders",
       "description": "Jeu web inspiré par Space Invaders. Un nouveau collègue désagréable rejoint votre équipe. Il s'attribue le mérite de vos succès et vous tient responsable des échecs. Achevez vos projets professionnels sans le laisser gâcher vos efforts, et faites en sorte que vous et vos autres collègues obteniez la reconnaissance que mérite votre travail.",
-      "tags": ["front-end", "back-end", "jeu vidéo"],
-      "tech_skills": ["JavaScript", "Pixel Art", "HTML"],
+      "tags": [
+        "front-end",
+        "back-end",
+        "jeu vidéo"
+      ],
+      "tech_skills": [
+        "JavaScript",
+        "Pixel Art",
+        "HTML"
+      ],
       "links": [
         {
           "title": "Bande annonce",
@@ -129,8 +160,17 @@
       "id": "dev_05",
       "name": "Project Nightmare : Discord in the Office",
       "description": "Application de forum programmée en Go et JavaScript. L'application combine des fonctionnalités de forum classique avec un système de messagerie privée en temps réel, le tout dans l'univers humoristique de Project Nightmare.",
-      "tags": ["front-end", "back-end", "communauté"],
-      "tech_skills": ["JavaScript", "HTML", "CSS", "Go"],
+      "tags": [
+        "front-end",
+        "back-end",
+        "communauté"
+      ],
+      "tech_skills": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Go"
+      ],
       "links": [
         {
           "title": "Github public",
@@ -142,8 +182,13 @@
       "id": "dev_06",
       "name": "Crossword",
       "description": "Programme qui résout automatiquement des grilles de mots croisés vides à partir d'une liste de mots fournie. L'algorithme utilise le backtracking pour explorer toutes les combinaisons possibles et garantir une solution unique.",
-      "tags": ["back-end", "algorithmique"],
-      "tech_skills": ["JavaScript"],
+      "tags": [
+        "back-end",
+        "algorithmique"
+      ],
+      "tech_skills": [
+        "JavaScript"
+      ],
       "links": [
         {
           "title": "Github public",
@@ -155,8 +200,16 @@
       "id": "dev_07",
       "name": "GraphQL",
       "description": "Tableau de bord récupérant des données GraphQL sur la plateforme de mon école (Zone01), après authentification. Récupère les données de cours et de projet et crée des graphiques en SVG.",
-      "tags": ["back-end", "front-end"],
-      "tech_skills": ["JavaScript", "GraphQL", "HTML", "CSS"],
+      "tags": [
+        "back-end",
+        "front-end"
+      ],
+      "tech_skills": [
+        "JavaScript",
+        "GraphQL",
+        "HTML",
+        "CSS"
+      ],
       "links": [
         {
           "title": "Github public",
@@ -168,8 +221,16 @@
       "id": "dev_08",
       "name": "Puppet",
       "description": "Puppet est un mini-framework conçu pour manipuler facilement le DOM et réduire le codage manuel du HTML. Il gère :<br/>- La création et la mise à jour d'élément du DOM <br/>- La réactivité en temps réel de l'affichage <br/>- L'utilisation de plusieurs routes en /#/ pour les SPA<br/>- Les événements",
-      "tags": ["back-end", "framework", "puppet"],
-      "tech_skills": ["JavaScript", "HTML", "CSS"],
+      "tags": [
+        "back-end",
+        "framework",
+        "puppet"
+      ],
+      "tech_skills": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
       "links": [
         {
           "title": "Github public",
@@ -187,8 +248,14 @@
       "id": "trad_01",
       "name": "Bamblup: Motion To Win",
       "description": "Lors d'un stage en Suède, j'ai travaillé chez FirstAndTen sur leur jeu Bamblup: Motion To Win. Mon rôle consistait à écrire le lore, les dialogues et les texte de l'interface en anglais avant des les traduire. Je participais aussi aux sessions brainstorming pour trouver de nouvelles idées de gameplay.",
-      "tags": ["FirstAndTen", "creativité"],
-      "tech_skills": ["Anglais → Français", "Travail d'équipe"],
+      "tags": [
+        "FirstAndTen",
+        "creativité"
+      ],
+      "tech_skills": [
+        "Anglais → Français",
+        "Travail d'équipe"
+      ],
       "links": [
         {
           "title": "Cheffe de projet : Leslie Alfredson",
@@ -200,8 +267,15 @@
       "id": "trad_02",
       "name": "J-RPG",
       "description": "Traduction et localisation complète d'un J-RPG : environ 300k mots de dialogues, descriptions de quêtes, noms inventés (compétences, créatures, lieux) et interfaces. Le jeu étant la suite de plusieurs autres, le maintien de la cohérence était une partie importante de mon travail sur ce projet.",
-      "tags": ["Keywords Studios", "creativité", "recherche"],
-      "tech_skills": ["Anglais → Français", "MemoQ"],
+      "tags": [
+        "Keywords Studios",
+        "creativité",
+        "recherche"
+      ],
+      "tech_skills": [
+        "Anglais → Français",
+        "MemoQ"
+      ],
       "links": [
         {
           "title": "Cheffe de projet : Florie Abélard",
@@ -216,8 +290,14 @@
       "id": "trad_03",
       "name": "Blizzard Out Of Game",
       "description": "Sous-titrage d'une interview vidéo promotionnelle pour une extension de HearthStone. Pour le même client et avec le même chef de projet, j'ai également travaillé sur d'autres projets \"Out of Game\", comme des notes de mise à jour et des annonces.",
-      "tags": ["Keywords Studios", "sous-titrage"],
-      "tech_skills": ["Anglais → Français", "SubtitleEdit"],
+      "tags": [
+        "Keywords Studios",
+        "sous-titrage"
+      ],
+      "tech_skills": [
+        "Anglais → Français",
+        "SubtitleEdit"
+      ],
       "links": [
         {
           "title": "Chef de projet : Sylvain Lamole",
@@ -233,8 +313,15 @@
       "id": "trad_04",
       "name": "Avatar: Frontiers of Pandora",
       "description": "Traduction et localisation de 60k mots de doublages, dialogues et menus du RPG en monde ouvert Avatar : Frontiers of Pandora (Ubisoft). Je faisais partie d'une équipe de six traducteurs et relecteurs.<br/>Nous avons également traduit le lore du jeu et les noms des plantes et créatures inventés.",
-      "tags": ["Keywords Studios", "creativité"],
-      "tech_skills": ["Anglais → Français", "MemoQ", "Travail d'équipe"],
+      "tags": [
+        "Keywords Studios",
+        "creativité"
+      ],
+      "tech_skills": [
+        "Anglais → Français",
+        "MemoQ",
+        "Travail d'équipe"
+      ],
       "links": [
         {
           "title": "Client : Ubisoft",
@@ -246,8 +333,15 @@
       "id": "trad_05",
       "name": "MasterChef",
       "description": "Sous-titrage en MTPE de 4 épisodes de MasterChef pour Amazon Prime (161 minutes). Le travail consistait majoritairement à corriger des erreurs de traduction et de contextualisation, ainsi qu'à rendre la version française plus idiomatique.",
-      "tags": ["WordMinds", "sous-titrage"],
-      "tech_skills": ["Anglais → Français", "SubtitleEdit", "MTPE"],
+      "tags": [
+        "WordMinds",
+        "sous-titrage"
+      ],
+      "tech_skills": [
+        "Anglais → Français",
+        "SubtitleEdit",
+        "MTPE"
+      ],
       "links": [
         {
           "title": "Chef de projet : Victor Bîbîlici",
@@ -263,8 +357,15 @@
       "id": "trad_06",
       "name": "Lovenest",
       "description": "Sous-titrage en MTPE du film LoveNest pour Disney+ (85 minutes). La correction en MTPE impliquait de corriger des noms de personnages, de traduire correctement des paroles de chanson et d'éviter les répétitions multiples sur certains termes, en plus de rendre le français plus naturel.",
-      "tags": ["WordMinds", "sous-titrage"],
-      "tech_skills": ["Anglais → Français", "SubtitleEdit", "MTPE"],
+      "tags": [
+        "WordMinds",
+        "sous-titrage"
+      ],
+      "tech_skills": [
+        "Anglais → Français",
+        "SubtitleEdit",
+        "MTPE"
+      ],
       "links": [
         {
           "title": "Cheffe de projet : Alina Castraşan",
@@ -280,8 +381,15 @@
       "id": "trad_07",
       "name": "Don't bother to knock",
       "description": "Sous-titrage en MTPE du film Don't bother to Knock pour Disney+ (72 minutes). Le travail consistait majoritairement à corriger des erreurs dans des noms de lieux et de personnages, d'assurer une version française cohérente et fluide et d'éviter des tournures de phrases étranges.",
-      "tags": ["WordMinds", "sous-titrage"],
-      "tech_skills": ["Anglais → Français", "SubtitleEdit", "MTPE"],
+      "tags": [
+        "WordMinds",
+        "sous-titrage"
+      ],
+      "tech_skills": [
+        "Anglais → Français",
+        "SubtitleEdit",
+        "MTPE"
+      ],
       "links": [
         {
           "title": "Cheffe de projet : Lilia Cusnir",
@@ -297,8 +405,15 @@
       "id": "trad_08",
       "name": "Sword Art Online: Echoes of Aincrad",
       "description": "J-RPG sorti le 10 juillet 2026. Connaissant bien la série du jeu, j'ai partagé la plupart de mes connaissances pour remplir le lexique et la mémoire de traduction et ainsi faciliter l'avancement du projet.",
-      "tags": ["Keywords Studios", "expertise jeux"],
-      "tech_skills": ["Anglais → Français", "MemoQ", "Travail d'équipe"],
+      "tags": [
+        "Keywords Studios",
+        "expertise jeux"
+      ],
+      "tech_skills": [
+        "Anglais → Français",
+        "MemoQ",
+        "Travail d'équipe"
+      ],
       "links": [
         {
           "title": "Chef de projet : Nicolas Matthew",
@@ -316,8 +431,16 @@
       "id": "write_02",
       "name": "L'éveil' des Titans",
       "description": "<strong>Les Secrets de May'zur - T2</strong>La cité souterraine de Zephdon n'a laissé personne indemne. Kinn'yah se débat entre angoisses et mauvais souvenirs tandis que Karel est envahi de nouvelles questions. Partagé entre des pouvoirs de plus en plus difficiles à contrôler et des sentiments impossibles à envisager, il prend la route du Sud au côté de la princesse.<br/><br/>L'avenir est fait de sacrifices, encore faut-il pouvoir y consentir...<center>... <i data-lucide=\"book-open-text\"></i> ...</center>",
-      "tags": ["Fantasy", "High Fantasy", "556 pages"],
-      "tech_skills": ["Écriture", "Worldbuilding", "Auto-édition"],
+      "tags": [
+        "Fantasy",
+        "High Fantasy",
+        "556 pages"
+      ],
+      "tech_skills": [
+        "Écriture",
+        "Worldbuilding",
+        "Auto-édition"
+      ],
       "links": [
         {
           "title": "Laisser un avis",
@@ -333,8 +456,16 @@
       "id": "write_01",
       "name": "Les Joyaux des Titans",
       "description": "<strong>Les Secrets de May'zur - T1</strong>Dix ans d'entraînement, d'observation, de préparation. Durant toutes ces années, Karel a convoité les joyaux des Titans, des gemmes précieuses conservées au palais royal censées lui fournir l'argent nécessaire pour sortir de la rue. Il lui suffit de les vendre et il pourra enfin changer de vie. C'était le projet de toute son existence.<br/><br/>Mais les souhaits ne se réalisent pas toujours comme prévu.<center>... <i data-lucide=\"book-open-text\"></i> ...</center>",
-      "tags": ["Fantasy", "High Fantasy", "540 pages"],
-      "tech_skills": ["Écriture", "Worldbuilding", "Auto-édition"],
+      "tags": [
+        "Fantasy",
+        "High Fantasy",
+        "540 pages"
+      ],
+      "tech_skills": [
+        "Écriture",
+        "Worldbuilding",
+        "Auto-édition"
+      ],
       "links": [
         {
           "title": "Laisser un avis",
@@ -466,6 +597,22 @@
       "position": {
         "x": 78.65,
         "y": 31.21
+      }
+    },
+    {
+      "type": "framework",
+      "name": "Vue.js",
+      "position": {
+        "x": 66.56,
+        "y": 7.47
+      }
+    },
+    {
+      "type": "framework",
+      "name": "Next.js",
+      "position": {
+        "x": 78.44,
+        "y": 87.42
       }
     }
   ],

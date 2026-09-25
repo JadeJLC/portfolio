@@ -49,16 +49,13 @@
     "./screenshots_dev/dev_05/membres.png",
     "./screenshots_dev/dev_05/profil.png"
   ],
-  "dev_06": [
-    "./screenshots_dev/dev_06/test.png"
-  ],
+  "dev_06": ["./screenshots_dev/dev_06/test.png"],
   "dev_07": [
     "./screenshots_dev/dev_07/graph_01.png",
     "./screenshots_dev/dev_07/graph_02.png",
     "./screenshots_dev/dev_07/perso.png",
     "./screenshots_dev/dev_07/skills.png"
   ],
-  "dev_08": [
-    "./screenshots_dev/dev_08/page.png"
-  ]
+  "dev_08": ["./screenshots_dev/dev_08/page.png"],
+  "dev_09": [""]
 }

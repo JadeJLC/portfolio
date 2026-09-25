@@ -187,7 +187,7 @@
       "description": "Projet d'intiation à MongoDB et Spring Boot. Let's play est une API noSQL contenant une liste d'utilisateurs et de produits, avec des niveaux d'authentification variées pour l'accès aux données et une sécurité renforcée.",
       "tags": ["back-end", "API", "noSQL", "sécurité"],
       "tech_skills": ["Java", "Spring Boot", "MongoDB"],
-      "link": [
+      "links": [
         {
           "title": "Github public",
           "href": "https://github.com/JadeJLC/lets-play/"

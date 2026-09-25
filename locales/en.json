@@ -485,7 +485,7 @@
     },
     {
       "type": "framework",
-      "name": "Spring",
+      "name": "Spring Boot",
       "position": {
         "x": 78.65,
         "y": 31.21
@@ -501,7 +501,7 @@
     },
     {
       "type": "framework",
-      "name": "Next.js",
+      "name": "Angular",
       "position": {
         "x": 78.44,
         "y": 87.42

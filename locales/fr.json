@@ -180,6 +180,19 @@
           "href": "https://puppet-todomvc.jadejlc.workers.dev/"
         }
       ]
+    },
+    {
+      "id": "dev_09",
+      "name": "Let's play",
+      "description": "Projet d'intiation à MongoDB et Spring Boot. Let's play est une API rest noSQL contenant une liste d'utilisateurs et de produits, avec des niveaux d'authentification variées pour l'accès aux données et une sécurité renforcée.",
+      "tags": ["back-end", "API", "noSQL", "sécurité"],
+      "tech_skills": ["Java", "Spring Boot", "MongoDB"],
+      "link": [
+        {
+          "title": "Github public",
+          "href": "https://github.com/JadeJLC/lets-play/"
+        }
+      ]
     }
   ],
   "trad_projects": [
